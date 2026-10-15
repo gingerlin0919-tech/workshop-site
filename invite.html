@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業演講與合作邀約申請表 ｜ Ginger 林逸蓁</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap');
+    body { font-family: 'Noto Sans TC', sans-serif; background-color: #F8FAFC; color: #1E293B; }
+  </style>
+</head>
+<body class="py-12 px-4 sm:px-6">
+
+  <div class="max-w-3xl mx-auto mb-5">
+    <a href="/" class="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-900"><i data-lucide="arrow-left" class="w-4 h-4"></i>回到《把資歷變資產》工作坊</a>
+  </div>
+
+  <div id="sentMsg" hidden class="max-w-3xl mx-auto mb-5 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+    <p class="font-bold">已收到您的邀約申請，謝謝！</p>
+    <p class="text-sm mt-1">我們將在 48 小時內主動與您聯繫，確認檔期與規劃。</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+    
+    <!-- 頂部高雅品牌標頭 -->
+    <div class="bg-slate-900 text-white p-7 sm:p-10 border-b-4 border-amber-500">
+      <div class="flex items-center justify-between gap-5">
+        <div>
+          <span class="text-sm uppercase tracking-widest text-amber-400 font-bold">Corporate Keynote & Training</span>
+          <h1 class="text-2xl sm:text-3xl font-black mt-1.5 text-white tracking-tight">企業演講 ＆ 合作邀約申請表</h1>
+        </div>
+        <div class="w-20 h-20 rounded-full border-2 border-amber-400 p-0.5 shrink-0 overflow-hidden bg-slate-800 shadow-xl">
+          <img src="ginger-profile.jpg" alt="Ginger 林逸蓁" class="w-full h-full object-cover object-top rounded-full">
+        </div>
+      </div>
+      <p class="text-sm sm:text-base text-slate-300 mt-4 leading-relaxed font-normal">
+        感謝您對 Ginger 林逸蓁老師的關注。為確保本次合作能精準符合貴單位的期待與目標，請填寫以下邀約細節，我們將在收到後 48 小時內主動與您聯繫確認檔期與規劃。
+      </p>
+    </div>
+
+    <!-- 表單內容：送出自動發送至 gingerlin0919@gmail.com -->
+    <form 
+      id="inquiryForm"
+      action="https://formsubmit.co/gingerlin0919@gmail.com" 
+      method="POST" 
+      class="p-7 sm:p-10 space-y-7"
+    >
+      <!-- 自動化配置 -->
+      <input type="hidden" name="_subject" value="🔔 收到新的【企業演講 / 合作邀約申請】">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://workshop.elites888.com/invite.html?sent=1">
+
+      <!-- 1. 企業與規模 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">公司 / 組織名稱 *</label>
+          <input type="text" name="公司名稱" required placeholder="請輸入公司或單位全名" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+        </div>
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">公司 / 組織規模總人數 *</label>
+          <select name="公司規模" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition bg-white cursor-pointer">
+            <option value="" disabled selected>請選擇規模人數</option>
+            <option value="50人以下">50 人以下</option>
+            <option value="50-100人">50 - 100 人</option>
+            <option value="101-300人">101 - 300 人</option>
+            <option value="300人以上">300 人以上大企業</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 2. 本次目的 -->
+      <div>
+        <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">本次希望達到的核心目的 *</label>
+        <textarea name="期待目的" rows="3" required placeholder="例如：激勵團隊士氣、導入高價值業務成交思維、主管領導共識、突破業績瓶頸等..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition leading-relaxed"></textarea>
+      </div>
+
+      <!-- 3. 對象與預計人數 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">授課 / 演講參與對象 *</label>
+          <input type="text" name="參與對象" required placeholder="例如：中高階主管、業務團隊、全體同仁" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+        </div>
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">預估參與人數 *</label>
+          <input type="text" name="預估人數" required placeholder="例如：約 30 人、約 150 人" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+        </div>
+      </div>
+
+      <!-- 4. 時間、時數與地點 -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">預計舉辦日期 / 月份 *</label>
+          <input type="text" name="預計日期" required placeholder="例如：2027年3月中" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+        </div>
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">預計時長 / 時數 *</label>
+          <select name="時數長度" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition bg-white cursor-pointer">
+            <option value="1.5-2小時演講">1.5 ～ 2 小時專題演講</option>
+            <option value="半日工作坊(3-4hr)">半日實戰工作坊 (3-4hr)</option>
+            <option value="全日深度內訓(6-7hr)">全日深度內訓 (6-7hr)</option>
+            <option value="系列課程/長期規劃">系列課程 / 顧問規劃</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm sm:text-base font-bold text-slate-800 mb-2">預計地點 / 形式 *</label>
+          <input type="text" name="活動地點" required placeholder="例如：台北市實體、線上" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+        </div>
+      </div>
+
+      <!-- 5. 追加尊榮選項 -->
+      <div class="p-5 rounded-2xl bg-amber-50/90 border border-amber-200/90">
+        <label class="flex items-start gap-3.5 cursor-pointer">
+          <input type="checkbox" name="追加選項_人財診斷體驗" value="是，希望申請10分鐘人財診斷體驗" class="mt-1 w-5 h-5 accent-amber-600 rounded cursor-pointer" />
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-bold text-slate-900 text-sm sm:text-base">✨ 是否申請體驗「10 分鐘人財動態診斷」？</span>
+              <span class="bg-amber-200/90 text-amber-950 text-xs px-2.5 py-0.5 rounded-full font-bold">限 50 人以上組織或部門</span>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1.5 leading-relaxed font-normal">
+              透過客觀動態模型，快速看見組織關鍵崗位的人才適配度與落差，提供具體管理與任務調配建議。
+            </p>
+          </div>
+        </label>
+      </div>
+
+      <!-- 6. 聯絡人窗口資訊 -->
+      <div class="border-t border-slate-200 pt-6 space-y-5">
+        <h3 class="text-sm uppercase font-black tracking-wider text-slate-400">聯絡窗口資訊</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm sm:text-base font-bold text-slate-800 mb-1.5">聯絡人姓名 *</label>
+            <input type="text" name="聯絡人姓名" required placeholder="例如：陳大明" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm sm:text-base font-bold text-slate-800 mb-1.5">職稱 / 部門 *</label>
+            <input type="text" name="聯絡人職稱" required placeholder="例如：人力資源處 協理" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm sm:text-base font-bold text-slate-800 mb-1.5">聯絡電話 / 手機 *</label>
+            <input type="tel" name="聯絡電話" required placeholder="0912-345-678" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm sm:text-base font-bold text-slate-800 mb-1.5">公務電子信箱 *</label>
+            <input type="email" name="聯絡信箱" required placeholder="contact@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm sm:text-base focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 outline-none transition" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 送出按鈕 -->
+      <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-base transition shadow-xl hover:shadow-2xl flex items-center justify-center gap-2.5">
+        <i data-lucide="send" class="w-5 h-5 text-amber-400"></i>
+        <span>送出合作邀約申請（48 小時內專人主動聯繫）</span>
+      </button>
+
+    </form>
+
+    <div class="bg-slate-50 p-5 text-center border-t border-slate-100">
+      <p class="text-xs sm:text-sm text-slate-500 font-medium">Ginger 林逸蓁 ｜ 20 年集團經營層幕僚・GPHR® 全球人力資源管理師・Dan Lok 高價值成交</p>
+    </div>
+
+  </div>
+
+  <script>
+    try { lucide.createIcons(); } catch (e) {}
+    if (new URLSearchParams(location.search).get('sent') === '1') {
+      document.getElementById('sentMsg').hidden = false;
+    }
+  </script>
+</body>
+</html>
