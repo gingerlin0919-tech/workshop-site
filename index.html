@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>把資歷變資產工作坊</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Ginger 林逸蓁《把資歷變資產》一日實戰工作坊：NLP 內外對齊指南＋S.C.A.N. 90 日行動計畫。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0B0F19', ink2: '#111827', amber: { DEFAULT: '#F59E0B' }, gold: '#D4AF37', cream: '#F5EEDC', mute: '#9AA3B5'
+        },
+        fontFamily: {
+          serif: ['"Noto Serif TC"', '"Songti TC"', 'serif'],
+          sans: ['"Noto Sans TC"', '"PingFang TC"', '"Microsoft JhengHei"', 'sans-serif'],
+          num: ['"Cormorant Garamond"', '"Noto Serif TC"', 'serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  /* Layout: a dark boardroom ledger — gold hairlines, glass panels, numbers set like an annual report */
+  :root {
+    --ink: #0B0F19; --ink-2: #111827; --gold: #D4AF37; --amber: #F59E0B;
+    --cream: #F5EEDC; --mute: #9AA3B5; --line: rgba(212,175,55,.22);
+    color-scheme: dark;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--ink); color: var(--cream); font-family: "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; font-size: 16px; line-height: 1.75; letter-spacing: .02em; -webkit-font-smoothing: antialiased; }
+  .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1,h2,h3 { text-wrap: balance; }
+  .glass { background: linear-gradient(160deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .glass-gold { background: linear-gradient(160deg, rgba(212,175,55,.12), rgba(245,158,11,.03)); border: 1px solid rgba(212,175,55,.45); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .gold-text { background: linear-gradient(100deg, #F7E7A6 0%, #D4AF37 45%, #F59E0B 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .eyebrow { font-size: .75rem; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); }
+  .hair { height: 1px; background: linear-gradient(90deg, transparent, var(--line), transparent); }
+  .num { font-family: "Cormorant Garamond","Noto Serif TC",serif; font-variant-numeric: tabular-nums lining-nums; }
+  .tabnum { font-variant-numeric: tabular-nums; }
+  .btn-gold { background: linear-gradient(100deg, #E9C766, #D4AF37 45%, #F59E0B); color: #1A1305; font-weight: 700; letter-spacing: .08em; box-shadow: 0 10px 30px -10px rgba(245,158,11,.55); transition: transform .2s, box-shadow .2s; }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 16px 40px -12px rgba(245,158,11,.75); }
+  .btn-ghost { border: 1px solid rgba(212,175,55,.5); color: var(--cream); letter-spacing: .08em; transition: background .2s, border-color .2s; }
+  .btn-ghost:hover { background: rgba(212,175,55,.1); border-color: var(--gold); }
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 6px; }
+
+  /* Ambient glow */
+  .aura { position: absolute; border-radius: 9999px; filter: blur(90px); pointer-events: none; }
+
+  /* Range sliders */
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: linear-gradient(90deg, var(--gold) var(--p,50%), rgba(255,255,255,.12) var(--p,50%)); outline: none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFF3C4, #D4AF37 55%, #A67C00); border: 2px solid #0B0F19; box-shadow: 0 0 0 3px rgba(212,175,55,.35), 0 4px 12px rgba(0,0,0,.5); cursor: pointer; }
+  input[type=range]::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: #D4AF37; border: 2px solid #0B0F19; box-shadow: 0 0 0 3px rgba(212,175,55,.35); cursor: pointer; }
+  .numfield { background: rgba(0,0,0,.35); border: 1px solid rgba(212,175,55,.3); color: var(--cream); border-radius: 10px; padding: .35rem .6rem; width: 6.5rem; text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Photo frame */
+  .frame { position: relative; border-radius: 28px; padding: 3px; background: linear-gradient(150deg, #F7E7A6, #D4AF37 40%, rgba(212,175,55,.15) 70%, #F59E0B); box-shadow: 0 0 60px -10px rgba(212,175,55,.55), 0 0 120px -30px rgba(245,158,11,.45); }
+  .frame img { display: block; border-radius: 25px; width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 22%; max-width: 100%; }
+
+  .pulse { animation: pulse 2.6s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { text-shadow: 0 0 24px rgba(245,158,11,.35); } 50% { text-shadow: 0 0 48px rgba(245,158,11,.7); } }
+  .bump { animation: bump .35s ease; }
+  @keyframes bump { 0% { transform: scale(1); } 40% { transform: scale(1.035); } 100% { transform: scale(1); } }
+
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform .25s; }
+
+  .timeline-row { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; }
+  @media (max-width: 480px) { .timeline-row { grid-template-columns: 4.5rem 1fr; gap: .75rem; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .pulse, .bump { animation: none !important; }
+    .btn-gold, .btn-ghost { transition: none; }
+  }
+</style>
+
+</head>
+<body>
+<div class="relative overflow-x-hidden">
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky z-40 gutter border-b border-white/5 bg-[#0B0F19]/80 backdrop-blur-md" style="top: env(safe-area-inset-top, 0px);">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 gap-4">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <span class="w-9 h-9 shrink-0 rounded-full grid place-items-center border border-[#D4AF37]/60 text-[#D4AF37] font-serif font-bold">資</span>
+        <span class="leading-tight min-w-0">
+          <span class="block font-serif font-bold tracking-wider text-[15px] truncate">把資歷變資產</span>
+          <span class="block text-[11px] text-[#9AA3B5] tracking-[.2em] truncate">GINGER 林逸蓁 ・ 一日實戰工作坊</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-[#9AA3B5]">
+        <a href="#calculator" class="hover:text-[#F5EEDC]">拖延代價</a>
+        <a href="#value" class="hover:text-[#F5EEDC]">核心成果</a>
+        <a href="#coach" class="hover:text-[#F5EEDC]">講師</a>
+        <a href="#faq" class="hover:text-[#F5EEDC]">常見問題</a>
+      </nav>
+      <a href="#plans" class="btn-gold rounded-full px-4 py-2 text-sm shrink-0">選購方案</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="relative gutter pt-14 pb-20 md:pt-24 md:pb-28">
+    <div class="aura w-[520px] h-[520px] bg-[#F59E0B]/15 -top-40 -right-40"></div>
+    <div class="aura w-[420px] h-[420px] bg-[#D4AF37]/10 top-60 -left-40"></div>
+
+    <div class="relative max-w-6xl mx-auto grid lg:grid-cols-[1.25fr_.75fr] gap-12 lg:gap-16 items-center">
+      <div class="min-w-0">
+        <p class="eyebrow mb-6">《把資歷變資產》作者親授 ・ 一日實戰</p>
+        <h1 class="font-serif font-black text-[2rem] leading-[1.35] sm:text-5xl sm:leading-[1.3] lg:text-[3.4rem] tracking-wide">
+          別把組織的平台光環，<br class="hidden sm:block">誤當成你自己的<span class="gold-text">「個人護城河」</span>
+        </h1>
+        <p class="mt-7 text-[17px] sm:text-lg text-[#C9CFDA] max-w-[38em] leading-[1.9]">
+          用一整天看清手上有什麼籌碼（Gauge），把內在信念與外在行動由上而下排整齊，帶著一份 <strong class="text-[#F5EEDC]">90 日資產累積作戰地圖</strong>離開！
+        </p>
+
+        <div class="mt-9 flex flex-col sm:flex-row gap-3">
+          <a href="#plans" class="btn-gold rounded-full px-7 py-4 text-center inline-flex items-center justify-center gap-2">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>立即前往方案選購
+          </a>
+          <a href="#calculator" class="btn-ghost rounded-full px-7 py-4 text-center inline-flex items-center justify-center gap-2">
+            <i data-lucide="calculator" class="w-5 h-5 text-[#D4AF37]"></i>算算拖延一年的代價有多大
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero portrait -->
+      <div class="relative max-w-[360px] w-full mx-auto lg:mx-0">
+        <div class="frame">
+          <img src="ginger-profile.jpg" alt="Ginger 林逸蓁 形象照" loading="eager">
+        </div>
+        <div class="glass-gold rounded-2xl px-4 py-3 absolute -bottom-6 -left-4 sm:-left-8 max-w-[240px]">
+          <p class="text-[11px] tracking-[.2em] text-[#D4AF37]">職涯資產教練</p>
+          <p class="font-serif font-bold text-lg leading-snug">Ginger 林逸蓁</p>
+          <p class="text-xs text-[#9AA3B5]">20 年經營層幕僚 ・ GPHR® ・ NLP 執行師</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust stats -->
+    <div class="relative max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass rounded-2xl p-5 flex gap-4 items-start">
+        <i data-lucide="clock-3" class="w-6 h-6 text-[#D4AF37] shrink-0 mt-1"></i>
+        <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">研習時間</p><p class="font-bold mt-1">一日實戰 8hr</p><p class="text-sm text-[#9AA3B5] tabnum">09:00 – 17:30</p></div>
+      </div>
+      <div class="glass rounded-2xl p-5 flex gap-4 items-start">
+        <i data-lucide="users" class="w-6 h-6 text-[#D4AF37] shrink-0 mt-1"></i>
+        <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">限額席次</p><p class="font-bold mt-1">小班制</p><p class="text-sm text-[#9AA3B5]">名額有限，精緻實戰</p></div>
+      </div>
+      <div class="glass rounded-2xl p-5 flex gap-4 items-start">
+        <i data-lucide="map" class="w-6 h-6 text-[#D4AF37] shrink-0 mt-1"></i>
+        <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">核心產出</p><p class="font-bold mt-1">NLP 內外對齊指南</p><p class="text-sm text-[#9AA3B5]">＋ 90 日行動計畫</p></div>
+      </div>
+      <div class="glass-gold rounded-2xl p-5 flex gap-4 items-start">
+        <i data-lucide="shield-check" class="w-6 h-6 text-[#F59E0B] shrink-0 mt-1"></i>
+        <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#D4AF37]">零風險保證</p><p class="font-bold mt-1">學費 100% 全額折抵</p><p class="text-sm text-[#C9CFDA]">第二階一年資產倍增計畫</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALCULATOR ============ -->
+  <section id="calculator" class="relative gutter py-20 md:py-28 bg-gradient-to-b from-[#0B0F19] via-[#0F1422] to-[#0B0F19] border-y border-white/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="eyebrow mb-4">職涯法說會 ・ Earnings Call</p>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">不行動與拖延代價計算機</h2>
+        <p class="mt-4 text-[#9AA3B5]">把「再想想」換算成數字。拖動滑桿，看看猶豫一年，你的帳上少了多少。</p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Inputs -->
+        <div class="glass rounded-3xl p-6 sm:p-8 flex flex-col gap-8 min-w-0">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <label for="cur" class="font-medium">目前折算時薪</label>
+              <div class="flex items-center gap-2 text-sm text-[#9AA3B5]"><input id="curN" type="number" class="numfield" min="200" max="2000" step="50" aria-label="目前折算時薪數值">元/hr</div>
+            </div>
+            <input id="cur" type="range" min="200" max="2000" step="50" value="500">
+            <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>200</span><span>2,000</span></div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <label for="ideal" class="font-medium">理想資產型時薪</label>
+              <div class="flex items-center gap-2 text-sm text-[#9AA3B5]"><input id="idealN" type="number" class="numfield" min="500" max="3000" step="50" aria-label="理想資產型時薪數值">元/hr</div>
+            </div>
+            <input id="ideal" type="range" min="500" max="3000" step="50" value="1000">
+            <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>500</span><span>3,000</span></div>
+          </div>
+
+          <div class="glass-gold rounded-2xl px-5 py-4 flex items-center justify-between gap-4">
+            <span class="flex items-center gap-2 text-sm"><i data-lucide="trending-up" class="w-4 h-4 text-[#D4AF37]"></i>時薪差距</span>
+            <span class="tabnum font-bold text-2xl text-[#F59E0B]">NT$ <span id="gap">500</span><span class="text-sm text-[#9AA3B5] font-normal"> /hr</span></span>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <label for="hrs" class="font-medium">每日拖延／猶豫時數</label>
+              <div class="flex items-center gap-2 text-sm text-[#9AA3B5]"><input id="hrsN" type="number" class="numfield" min="1" max="4" step="0.5" aria-label="每日拖延時數數值">小時/天</div>
+            </div>
+            <input id="hrs" type="range" min="1" max="4" step="0.5" value="1">
+            <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>1</span><span>4</span></div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <label for="days" class="font-medium">一年工作天數</label>
+              <div class="flex items-center gap-2 text-sm text-[#9AA3B5]"><input id="daysN" type="number" class="numfield" min="200" max="300" step="5" aria-label="一年工作天數數值">天</div>
+            </div>
+            <input id="days" type="range" min="200" max="300" step="5" value="250">
+            <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>200</span><span>300</span></div>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="relative rounded-3xl p-6 sm:p-10 overflow-hidden border border-[#F59E0B]/40 bg-gradient-to-br from-[#1A1408] via-[#120F0A] to-[#0B0F19] flex flex-col min-w-0">
+          <div class="aura w-80 h-80 bg-[#F59E0B]/20 -top-24 -right-24"></div>
+          <div class="relative">
+            <p class="text-sm tracking-[.25em] text-[#D4AF37]">你一年為拖延付出的隱形沉沒代價</p>
+            <p id="lossWrap" class="mt-4 font-num font-bold leading-none text-[#F59E0B] pulse break-all" style="font-size: clamp(3rem, 11vw, 5.6rem);">
+              <span class="text-[.45em] align-top mr-1">NT$</span><span id="loss" class="tabnum">125,000</span>
+            </p>
+            <p class="mt-3 text-sm text-[#9AA3B5] tabnum">
+              公式：時薪差 <span id="fGap">500</span> × 每日 <span id="fHrs">1</span> 小時 × <span id="fDays">250</span> 天
+            </p>
+
+            <div class="hair my-7"></div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="alert-triangle" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-1"></i>
+              <p class="text-[#C9CFDA]">如果整年 <span class="tabnum">2,000</span> 工時都停在舊時薪，落差是 <strong class="text-[#F5EEDC] tabnum">NT$ <span id="fullYear">1,000,000</span></strong>。</p>
+            </div>
+
+            <div class="mt-7 glass rounded-2xl p-5">
+              <p class="leading-[1.9] text-[15px]">
+                相較於每年白白流失的數十萬甚至上百萬機會成本，第一階工作坊投資只要 <strong class="text-[#F5EEDC]">NT$ 8,800</strong>（憑心得優惠更只要 <strong class="text-[#F59E0B]">6,800</strong>），只需挽回整年落差的 <strong class="text-[#F59E0B] tabnum" id="pct">0.9%</strong> 就立刻回本！
+              </p>
+              <div class="mt-4 h-2 rounded-full bg-white/10 overflow-hidden" aria-hidden="true">
+                <div id="pctBar" class="h-full rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F59E0B]" style="width: 1%"></div>
+              </div>
+              <p class="mt-2 text-xs text-[#6B7385]">以一般方案 NT$ 8,800 ÷ 整年工時落差計算</p>
+            </div>
+
+            <a href="#plans" class="btn-gold mt-8 rounded-full px-7 py-4 inline-flex items-center justify-center gap-2 w-full sm:w-auto">
+              停止付拖延稅，查看方案 <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAIN & VALUE ============ -->
+  <section id="value" class="gutter py-20 md:py-28">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-10 lg:gap-16 items-start">
+        <div class="lg:sticky lg:top-28 min-w-0">
+          <p class="eyebrow mb-4">痛點破局</p>
+          <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">為什麼過去的計畫，<br>總在<span class="gold-text">第 15 天</span>悄悄停下來？</h2>
+          <p class="mt-5 text-[#9AA3B5] max-w-md">不是你不夠努力。多半是三個結構性的缺口，讓熱情撐不過兩週。</p>
+        </div>
+        <div class="flex flex-col gap-4 min-w-0">
+          <div class="glass rounded-2xl p-6 flex gap-5">
+            <i data-lucide="badge-x" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">借用別人的職稱過活</h3><p class="text-[#9AA3B5] mt-1">名片上的頭銜屬於公司。離開組織後，手上缺乏可以獨立變現的資產。</p></div>
+          </div>
+          <div class="glass rounded-2xl p-6 flex gap-5">
+            <i data-lucide="layers" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">卡在信念層</h3><p class="text-[#9AA3B5] mt-1">上課熱血三天就被環境吞沒。問題在於缺乏從屬等級的垂直對齊，行動底下沒有信念撐住。</p></div>
+          </div>
+          <div class="glass rounded-2xl p-6 flex gap-5">
+            <i data-lucide="flag" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">缺乏明確檢核點</h3><p class="text-[#9AA3B5] mt-1">沒有具體的觀察訊號，也沒有第 30／60／90 天的檢查機制，進度只能靠感覺。</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hair my-20"></div>
+
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="eyebrow mb-4">Take-home Deliverables</p>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">當天親手帶走的 4 大核心成果</h2>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 gap-5">
+        <article class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="compass" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">NLP 內外在對齊指南</h3></div>
+          <p class="text-[#9AA3B5]">從屬等級六層垂直梳理：環境、行為、能力、信念、身分、使命。打通內在內耗，讓行動有根。</p>
+        </article>
+        <article class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="target" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">S.C.A.N. 90 日行動計畫</h3></div>
+          <p class="text-[#9AA3B5]">鎖定一項資產、一個 90 天成果，訂出明確檢核點，讓第 15 天之後依然有路可走。</p>
+        </article>
+        <article class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="landmark" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">職涯法說會：資產負債表</h3></div>
+          <p class="text-[#9AA3B5]">算出個人資產淨值分數，並定位三年後的目標位置，像經營一家公司一樣經營自己。</p>
+        </article>
+        <article class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="quote" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">人生價值句 ＆ Be 宣言</h3></div>
+          <p class="text-[#9AA3B5]">以五感定錨提煉核心價值句。撕下職稱名片，依然能自信說出「我是誰」。</p>
+        </article>
+      </div>
+
+      <!-- Schedule -->
+      <div class="mt-20 glass rounded-3xl p-6 sm:p-10">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
+          <div>
+            <p class="eyebrow mb-3">One-day Agenda</p>
+            <h3 class="font-serif font-bold text-2xl sm:text-3xl">精實一日行程</h3>
+          </div>
+          <p class="text-sm text-[#9AA3B5] flex items-center gap-2"><i data-lucide="utensils" class="w-4 h-4 text-[#D4AF37]"></i>含精緻午餐、茶水點心與學員交流</p>
+        </div>
+        <ol class="flex flex-col">
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">09:00</span><div><p class="font-bold">開場：職涯法說會啟動</p><p class="text-sm text-[#9AA3B5]">破冰、平台光環 vs. 個人護城河的自我檢視</p></div></li>
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">09:30</span><div><p class="font-bold">Gauge 盤點：看清手上的籌碼</p><p class="text-sm text-[#9AA3B5]">G.A.M.E. 框架，完成個人資產負債表與淨值分數</p></div></li>
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">11:00</span><div><p class="font-bold">NLP 從屬等級：由上而下垂直對齊</p><p class="text-sm text-[#9AA3B5]">六層梳理，找出卡住行動的那一層信念</p></div></li>
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">12:30</span><div><p class="font-bold">精緻午餐與交流</p><p class="text-sm text-[#9AA3B5]">與同班學員建立連結</p></div></li>
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">13:30</span><div><p class="font-bold">人生價值句 ＆ Be 宣言</p><p class="text-sm text-[#9AA3B5]">五感定錨，提煉屬於你的核心價值句</p></div></li>
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">15:00</span><div><p class="font-bold">S.C.A.N. 90 日行動計畫</p><p class="text-sm text-[#9AA3B5]">鎖定一項資產，設定第 30／60／90 天檢核點</p></div></li>
+          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">16:30</span><div><p class="font-bold">AI 提詞實戰與成果發表</p><p class="text-sm text-[#9AA3B5]">用職涯資產 AI 提詞指令包加速落地</p></div></li>
+          <li class="timeline-row py-4"><span class="num text-xl text-[#D4AF37] font-semibold">17:30</span><div><p class="font-bold">收尾：帶著作戰地圖離開</p><p class="text-sm text-[#9AA3B5]">第二階一年資產倍增計畫說明</p></div></li>
+        </ol>
+        <p class="mt-4 text-xs text-[#6B7385]">實際時段依當期課程安排微調。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COACH ============ -->
+  <section id="coach" class="relative gutter py-20 md:py-28 bg-gradient-to-b from-[#0B0F19] via-[#0F1422] to-[#0B0F19] border-y border-white/5">
+    <div class="aura w-[460px] h-[460px] bg-[#D4AF37]/10 top-20 -left-40"></div>
+    <div class="relative max-w-6xl mx-auto grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-16 items-start">
+      <div class="max-w-[400px] w-full mx-auto lg:mx-0">
+        <div class="frame"><img src="ginger-profile.jpg" alt="職涯資產教練 Ginger 林逸蓁" loading="lazy"></div>
+        <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+          <div class="glass rounded-xl py-3"><p class="num text-3xl font-bold text-[#D4AF37]">20<span class="text-lg">+</span></p><p class="text-[11px] text-[#9AA3B5] tracking-wider">年經營層幕僚</p></div>
+          <div class="glass rounded-xl py-3"><p class="num text-3xl font-bold text-[#D4AF37]">EMBA</p><p class="text-[11px] text-[#9AA3B5] tracking-wider">臺師大</p></div>
+          <div class="glass rounded-xl py-3"><p class="num text-3xl font-bold text-[#D4AF37]">GPHR</p><p class="text-[11px] text-[#9AA3B5] tracking-wider">HRCI 國際認證</p></div>
+        </div>
+      </div>
+
+      <div class="min-w-0">
+        <p class="eyebrow mb-4">Your Coach</p>
+        <h2 class="font-serif font-black text-4xl sm:text-5xl tracking-wide">Ginger 林逸蓁</h2>
+        <p class="mt-3 text-lg text-[#D4AF37] tracking-[.2em]">職涯資產教練 ・《把資歷變資產》作者</p>
+
+        <div class="mt-8 flex flex-col gap-5 text-[#C9CFDA] leading-[1.95] max-w-[40em]">
+          <p class="flex gap-3"><i data-lucide="building-2" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>任職於台灣大型集團旗下關係企業，擔任經營層幕僚超過 20 年，歷任<strong class="text-[#F5EEDC]">董事長特助、經營企劃主管及企業內部講師</strong>。</span></p>
+          <p class="flex gap-3"><i data-lucide="eye" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>從企業策略、人才發展到組織變動，近距離參與經營決策現場，深刻理解企業如何評估人才、配置資源與放大價值。</span></p>
+          <p class="flex gap-3"><i data-lucide="handshake" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>曾接受國際企業家導師 Dan Lok 的高價值成交與教練訓練，將企業端的價值判斷，延伸至人才市場端的價值溝通。</span></p>
+          <p class="flex gap-3"><i data-lucide="brain" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>深度結合 NLP（神經語言程式學），將思維、行為與價值創造之間的關係，轉化為系統化的落地工具。</span></p>
+        </div>
+
+        <div class="hair my-9"></div>
+
+        <p class="text-sm tracking-[.25em] text-[#9AA3B5] mb-4">學歷與專業資格</p>
+        <ul class="grid sm:grid-cols-2 gap-3">
+          <li class="glass rounded-xl px-4 py-3 flex gap-3 items-start"><i data-lucide="graduation-cap" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i><span class="text-sm">國立臺灣師範大學 EMBA</span></li>
+          <li class="glass rounded-xl px-4 py-3 flex gap-3 items-start"><i data-lucide="graduation-cap" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i><span class="text-sm">東吳大學日本語文學系、國際貿易學系雙學士</span></li>
+          <li class="glass-gold rounded-xl px-4 py-3 flex gap-3 items-start"><i data-lucide="award" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5"></i><span class="text-sm">美國人力資源認證協會（HRCI）全球人力資源管理師（GPHR®）</span></li>
+          <li class="glass-gold rounded-xl px-4 py-3 flex gap-3 items-start"><i data-lucide="award" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5"></i><span class="text-sm">美國神經語言程式學委員會（ABNLP）NLP 專業執行師</span></li>
+          <li class="glass rounded-xl px-4 py-3 flex gap-3 items-start"><i data-lucide="badge-check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i><span class="text-sm">勞動部就業服務乙級技術士 ＆ 就業服務專業人員資格</span></li>
+          <li class="glass rounded-xl px-4 py-3 flex gap-3 items-start"><i data-lucide="heart-handshake" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i><span class="text-sm">104 人力銀行 Giver 職涯志工</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANS ============ -->
+  <section id="plans" class="gutter py-20 md:py-28">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="eyebrow mb-4">Choose Your Step</p>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">三種起步方式，選一個今天就開始</h2>
+        <p class="mt-4 text-[#9AA3B5]">從一本書建立底層思維，或直接進教室，一天帶走 90 日作戰地圖。</p>
+      </div>
+
+      <div class="mt-14 grid lg:grid-cols-3 gap-6 items-stretch">
+        <!-- Plan 1 -->
+        <article class="glass rounded-3xl p-6 sm:p-8 flex flex-col order-2 lg:order-1 min-w-0">
+          <span class="self-start text-xs tracking-[.2em] px-3 py-1 rounded-full border border-white/15 text-[#9AA3B5]">入門輕量</span>
+          <h3 class="mt-5 font-serif font-bold text-2xl leading-snug">我先買書<br>《把資歷變資產》</h3>
+          <p class="mt-3 text-[#9AA3B5] text-[15px]">先透過書籍建立 G.A.M.E. 職涯資產底層思維。</p>
+
+          <div class="mt-6 rounded-2xl border border-[#D4AF37]/40 bg-[#D4AF37]/[.06] p-5">
+            <p class="font-bold flex items-center gap-2"><i data-lucide="pen-tool" class="w-4 h-4 text-[#D4AF37]"></i>作者親簽珍藏版</p>
+            <p class="mt-2 text-sm text-[#C9CFDA] leading-[1.85]">如果你想收藏 Ginger 親簽版，可以透過這個訂購連結購買。由 Ginger 親自包裝，為你寫上祝福，價格已含運費。</p>
+            <a href="https://p.ecpay.com.tw/FDA7322" target="_blank" rel="noopener" class="btn-gold mt-4 rounded-full px-5 py-3 w-full inline-flex items-center justify-center gap-2 text-sm">訂購親簽版 <i data-lucide="external-link" class="w-4 h-4"></i></a>
+          </div>
+
+          <div class="mt-4 rounded-2xl border border-white/10 p-5 flex-1 flex flex-col">
+            <p class="font-bold flex items-center gap-2"><i data-lucide="library" class="w-4 h-4 text-[#D4AF37]"></i>各大網路通路</p>
+            <p class="mt-2 text-sm text-[#9AA3B5] leading-[1.85]">當然，也可以在誠品、博客來等大型網路通路及實體書店選購。好處是可以累積紅利點數，要買其他書的話，也有機會湊免運，以及讓通路知道這本書正在動起來！</p>
+            <div class="mt-4 grid gap-2">
+              <a href="https://www.books.com.tw/products/0011062930?loc=M_0006_052&amp;srsltid=AU7gw4UXlqe9k7perdBuFiN3puIvHXEONXekBg8NBS7T6qCQ4THIba5M" target="_blank" rel="noopener" class="btn-ghost rounded-full px-5 py-2.5 inline-flex items-center justify-between text-sm"><span>博客來</span><i data-lucide="arrow-up-right" class="w-4 h-4 text-[#D4AF37]"></i></a>
+              <a href="https://www.eslite.com/product/10012013192683223251008?srsltid=AU7gw4UnSf-AsCa0kFJjTXbAlhiOPWBaVwwZZt9QOH1i7s1wxKm3kyA9" target="_blank" rel="noopener" class="btn-ghost rounded-full px-5 py-2.5 inline-flex items-center justify-between text-sm"><span>誠品線上</span><i data-lucide="arrow-up-right" class="w-4 h-4 text-[#D4AF37]"></i></a>
+              <a href="https://www.momoshop.com.tw/product/15681273?srsltid=AU7gw4VZi8VctEe563kjT_7tPMKylgnyjJmsYU6nRPmjukhb3_tYSOcx" target="_blank" rel="noopener" class="btn-ghost rounded-full px-5 py-2.5 inline-flex items-center justify-between text-sm"><span>MOMO 購物網</span><i data-lucide="arrow-up-right" class="w-4 h-4 text-[#D4AF37]"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Plan 2 (featured) -->
+        <article class="relative rounded-3xl p-[2px] order-1 lg:order-2 bg-gradient-to-b from-[#F7E7A6] via-[#D4AF37] to-[#F59E0B] shadow-[0_0_80px_-20px_rgba(245,158,11,.6)] lg:-mt-4 lg:mb-[-1rem] min-w-0">
+          <div class="h-full rounded-[22px] bg-gradient-to-b from-[#1A1408] to-[#0E1018] p-6 sm:p-8 flex flex-col">
+            <span class="self-start text-xs font-bold tracking-[.15em] px-3 py-1 rounded-full btn-gold">⭐ 讀者回饋限定</span>
+            <h3 class="mt-5 font-serif font-bold text-2xl leading-snug">新書讀者<br>心得折抵方案</h3>
+            <div class="mt-5">
+              <p class="text-sm text-[#9AA3B5]">原價 <s class="tabnum">NT$ 8,800</s></p>
+              <p class="mt-1 flex items-end gap-2 flex-wrap"><span class="num font-bold text-6xl text-[#F59E0B] leading-none tabnum">6,800</span><span class="text-sm text-[#C9CFDA] pb-1">NT$ ／ 一日完整實戰</span></p>
+              <p class="mt-3 inline-block text-xs font-bold px-2.5 py-1 rounded-md bg-[#F59E0B]/15 text-[#F59E0B]">立省 NT$ 2,000</p>
+            </div>
+            <p class="mt-5 text-sm text-[#C9CFDA] rounded-xl bg-white/5 px-4 py-3">條件：憑《把資歷變資產》購書單號 ＋ 500 字閱讀心得折抵</p>
+            <ul class="mt-6 flex flex-col gap-3 text-[15px] flex-1">
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>全日 8hr 工作坊實戰入場</li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>專屬實作講義 ＋ 全套模板</li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>獨家職涯資產【AI 提詞指令包】</li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>精緻午餐 ＋ 茶水點心</li>
+              <li class="flex gap-3 rounded-xl bg-[#F59E0B]/10 border border-[#F59E0B]/30 px-3 py-2.5"><i data-lucide="flame" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5"></i><span>學費 NT$ 6,800 可「<strong>100% 全額折抵</strong>」第二階一年計畫！</span></li>
+            </ul>
+            <a href="https://p.ecpay.com.tw/5096DC6" target="_blank" rel="noopener" class="btn-gold mt-8 rounded-full px-6 py-4 inline-flex items-center justify-center gap-2">以讀者優惠價報名 <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+          </div>
+        </article>
+
+        <!-- Plan 3 -->
+        <article class="glass rounded-3xl p-6 sm:p-8 flex flex-col order-3 min-w-0">
+          <span class="self-start text-xs tracking-[.2em] px-3 py-1 rounded-full border border-[#D4AF37]/40 text-[#D4AF37]">快速入場</span>
+          <h3 class="mt-5 font-serif font-bold text-2xl leading-snug">一般實戰方案</h3>
+          <div class="mt-5">
+            <p class="text-sm text-[#9AA3B5]">無需撰寫心得，直接預約席次</p>
+            <p class="mt-1 flex items-end gap-2 flex-wrap"><span class="num font-bold text-6xl text-[#F5EEDC] leading-none tabnum">8,800</span><span class="text-sm text-[#C9CFDA] pb-1">NT$ ／ 一日完整實戰</span></p>
+          </div>
+          <ul class="mt-6 flex flex-col gap-3 text-[15px] flex-1">
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>全日 8hr 工作坊實戰入場</li>
+            <li class="flex gap-3"><i data-lucide="gift" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>現場額外致贈《把資歷變資產》實體書一本</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>專屬講義 ＋ 全套模板 ＋ AI 提詞包</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>精緻午餐 ＋ 茶水點心</li>
+            <li class="flex gap-3 rounded-xl bg-[#F59E0B]/10 border border-[#F59E0B]/30 px-3 py-2.5"><i data-lucide="flame" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5"></i><span>學費 NT$ 8,800 可「<strong>100% 全額折抵</strong>」第二階一年計畫！</span></li>
+          </ul>
+          <a href="https://p.ecpay.com.tw/6802199" target="_blank" rel="noopener" class="btn-ghost mt-8 rounded-full px-6 py-4 inline-flex items-center justify-center gap-2 font-bold">直接預約席次 <i data-lucide="arrow-right" class="w-5 h-5 text-[#D4AF37]"></i></a>
+        </article>
+      </div>
+
+      <p class="mt-10 text-center text-sm text-[#9AA3B5] flex items-center justify-center gap-2 flex-wrap"><i data-lucide="lock" class="w-4 h-4 text-[#D4AF37]"></i>付款透過綠界科技 ECPay 安全金流處理</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="gutter py-20 md:py-24 border-t border-white/5">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center">
+        <p class="eyebrow mb-4">FAQ</p>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl">常見問題</h2>
+      </div>
+      <div class="mt-10 flex flex-col gap-3">
+        <details class="glass rounded-2xl px-6 py-5">
+          <summary class="flex items-center justify-between gap-4 font-bold">閱讀心得要怎麼補交？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">完成「讀者心得折抵方案」付款後，請於開課前 7 天，將《把資歷變資產》購書單號（親簽版、博客來、誠品、MOMO 或實體書店發票皆可）連同 500 字閱讀心得回傳給課程小組。心得可分享書中最有感的一個觀念，以及你打算如何運用在自己的職涯上。</p>
+        </details>
+        <details class="glass rounded-2xl px-6 py-5">
+          <summary class="flex items-center justify-between gap-4 font-bold">報名後臨時有事無法出席怎麼辦？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">請於開課前通知課程小組辦理請假，學費可保留，轉至下一梯次使用。由於採小班制，保留席次將依下一梯次的名額狀況安排。</p>
+        </details>
+        <details class="glass rounded-2xl px-6 py-5">
+          <summary class="flex items-center justify-between gap-4 font-bold">「100% 全額折抵」怎麼運作？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">完成第一階一日工作坊後，若決定加入第二階「一年資產倍增計畫」，你已支付的工作坊學費（NT$ 6,800 或 NT$ 8,800）將全額折抵第二階費用。等於第一階是免費體驗，零風險。</p>
+        </details>
+        <details class="glass rounded-2xl px-6 py-5">
+          <summary class="flex items-center justify-between gap-4 font-bold">還沒讀過書，可以直接上課嗎？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">可以。「一般實戰方案」無需撰寫心得，現場還會致贈實體書一本，課後可搭配書籍複習。</p>
+        </details>
+        <details class="glass rounded-2xl px-6 py-5">
+          <summary class="flex items-center justify-between gap-4 font-bold">計算機的數字代表什麼？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">計算機以「時薪差 × 每日拖延時數 × 工作天數」估算機會成本，用來幫助你把猶豫具體化。實際收入變化因人而異，數字僅供自我評估參考。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA + FOOTER ============ -->
+  <section class="gutter pb-16">
+    <div class="max-w-6xl mx-auto glass-gold rounded-3xl px-6 py-12 sm:px-12 text-center relative overflow-hidden">
+      <div class="aura w-80 h-80 bg-[#F59E0B]/20 -bottom-32 left-1/2 -translate-x-1/2"></div>
+      <h2 class="relative font-serif font-bold text-2xl sm:text-3xl leading-snug">職稱會留在公司，<span class="gold-text">資產會跟著你走。</span></h2>
+      <p class="relative mt-4 text-[#C9CFDA]">小班制名額有限，一天換一份 90 日作戰地圖。</p>
+      <a href="#plans" class="relative btn-gold mt-8 rounded-full px-8 py-4 inline-flex items-center gap-2">立即前往方案選購 <i data-lucide="arrow-up" class="w-5 h-5"></i></a>
+    </div>
+  </section>
+
+  <footer class="gutter py-10 border-t border-white/5">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-4 text-sm text-[#6B7385]">
+      <p>© <span id="yr">2026</span> Ginger 林逸蓁 ・ 職涯資產教練 ・ 從資歷到資產™. All rights reserved.</p>
+      <p>本頁所有文字、課程架構與教材內容均受著作權保護，未經授權請勿轉載或重製。</p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div id="mcta" class="md:hidden fixed left-0 right-0 bottom-0 z-40 border-t border-[#D4AF37]/30 bg-[#0B0F19]/90 backdrop-blur-md" style="padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-top: 10px; padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));">
+    <a href="#plans" class="btn-gold rounded-full py-3 flex items-center justify-center gap-2 text-sm">讀者優惠價 NT$ 6,800 ・ 立即報名</a>
+  </div>
+  <div class="md:hidden h-16"></div>
+</div>
+
+<script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js"></script>
+<script>
+  (function () {
+    try { if (window.lucide) lucide.createIcons(); } catch (e) {}
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    var fmt = function (n) { return Math.round(n).toLocaleString('zh-TW'); };
+    var pairs = [['cur','curN'],['ideal','idealN'],['hrs','hrsN'],['days','daysN']];
+    var lossEl = document.getElementById('loss');
+    var lossWrap = document.getElementById('lossWrap');
+    var lastLoss = null;
+
+    function paint(r) {
+      var p = (r.value - r.min) / (r.max - r.min) * 100;
+      r.style.setProperty('--p', p + '%');
+    }
+
+    function calc() {
+      var cur = +document.getElementById('cur').value;
+      var ideal = +document.getElementById('ideal').value;
+      var hrs = +document.getElementById('hrs').value;
+      var days = +document.getElementById('days').value;
+      var gap = Math.max(0, ideal - cur);
+      var loss = gap * hrs * days;
+      var full = gap * 2000;
+
+      document.getElementById('gap').textContent = fmt(gap);
+      document.getElementById('fGap').textContent = fmt(gap);
+      document.getElementById('fHrs').textContent = hrs;
+      document.getElementById('fDays').textContent = days;
+      lossEl.textContent = fmt(loss);
+      document.getElementById('fullYear').textContent = fmt(full);
+
+      var pctEl = document.getElementById('pct');
+      var bar = document.getElementById('pctBar');
+      if (full > 0) {
+        var pct = 8800 / full * 100;
+        pctEl.textContent = (pct < 10 ? pct.toFixed(1) : Math.round(pct)) + '%';
+        bar.style.width = Math.min(100, Math.max(1, pct)) + '%';
+      } else {
+        pctEl.textContent = '—';
+        bar.style.width = '0%';
+      }
+
+      if (lastLoss !== null && lastLoss !== loss) {
+        lossWrap.classList.remove('bump'); void lossWrap.offsetWidth; lossWrap.classList.add('bump');
+      }
+      lastLoss = loss;
+    }
+
+    pairs.forEach(function (pr) {
+      var r = document.getElementById(pr[0]);
+      var n = document.getElementById(pr[1]);
+      n.value = r.value; paint(r);
+      r.addEventListener('input', function () { n.value = r.value; paint(r); calc(); });
+      n.addEventListener('input', function () {
+        var v = parseFloat(n.value);
+        if (isNaN(v)) return;
+        r.value = Math.min(+r.max, Math.max(+r.min, v)); paint(r); calc();
+      });
+      n.addEventListener('change', function () { n.value = r.value; });
+    });
+    calc();
+  })();
+</script>
+</body>
+</html>
