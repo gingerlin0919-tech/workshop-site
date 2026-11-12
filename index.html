@@ -598,6 +598,7 @@
         b.setAttribute('aria-pressed', String(on));
       });
     }
+    function segN(t) { return '<span class="inline-block whitespace-nowrap">' + t + '</span>'; }
     function seg(t) { return '<span class="inline-block whitespace-nowrap mr-1">' + t + '</span>'; }
     function fitLoss() {
       var size = window.innerWidth >= 1024 ? 76 : window.innerWidth >= 640 ? 68 : 56;
@@ -637,11 +638,11 @@
       var formula = document.getElementById('formula');
       if (months === 0) {
         label.textContent = '現在開始，你不必付出這筆代價';
-        note.innerHTML = seg('最划算的開始時間，') + seg('永遠是現在。');
+        note.innerHTML = segN('最划算的開始時間，') + segN('永遠是現在。');
         formula.innerHTML = seg('每多等 1 年，') + seg('就少賺 NT$ ' + fmt(gap * HOURS_YEAR));
       } else {
         label.textContent = never ? '如果 3 年都沒開始，你會少賺' : (months === 6 ? '晚半年開始，你會少賺' : '晚 ' + span(months) + '開始，你會少賺');
-        note.innerHTML = seg('這筆錢不會出現在你的存摺上，') + '<br>' + seg('卻一點一點拉開') + seg('你和理想生活的距離。');
+        note.innerHTML = segN('這筆錢不會出現在你的存摺上，') + '<br>' + segN('卻一點一點拉開') + segN('你和理想生活的距離。');
         formula.innerHTML = seg('公式：時薪差 ' + fmt(gap)) + seg('× 每月約 166.7 工時') + seg('＝ 每月少賺 NT$ ' + fmt(gap * HOURS_MONTH) + '，') + seg('再 × ' + months + ' 個月');
       }
 
