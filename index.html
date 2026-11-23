@@ -121,10 +121,10 @@
       <div class="min-w-0">
         <p class="eyebrow mb-6 leading-relaxed"><span class="inline-block whitespace-nowrap">《把資歷變資產》作者親授</span><span class="hidden sm:inline"> ・ </span><br class="sm:hidden"><span class="inline-block whitespace-nowrap">1/16(六) 一日實戰</span></p>
         <h1 class="font-serif font-black text-[1.55rem] min-[400px]:text-[1.75rem] leading-[1.4] sm:text-5xl sm:leading-[1.3] lg:text-[3.4rem] tracking-wide">
-          <span class="inline-block whitespace-nowrap">別把平台給的資源，</span><br><span class="inline-block whitespace-nowrap">誤當成自己的<span class="gold-text">「真實價值」</span></span>
+          <span class="block text-[15px] sm:text-lg font-normal text-[#9AA3B5] tracking-normal leading-relaxed mb-3"><span class="inline-block whitespace-nowrap">104 履歷診療室觀察：</span><span class="inline-block whitespace-nowrap">求職者最常問的，不是履歷怎麼寫</span></span><span class="inline-block whitespace-nowrap">而是<span class="gold-text">「我到底適合什麼？」</span></span>
         </h1>
         <p class="mt-7 text-[17px] sm:text-lg text-[#C9CFDA] max-w-[38em] leading-[1.9]">
-          用一整天盤點自己已經累積的職涯資產（Gauge），把內在信念與外在行動由上而下排整齊，親手完成一份 <strong class="text-[#F5EEDC]">90 日資產累積行動計畫</strong>，回到工作崗位就能開始執行。
+          被問到「你的強項是什麼」，你能一句話說清楚嗎？用一天，找出你的<strong class="text-[#F5EEDC]">差異化定位</strong>，具象化你的價值，帶著 <strong class="text-[#F5EEDC]">30／60／90 天行動計畫</strong>回去。
         </p>
 
         <div class="mt-9 flex flex-col sm:flex-row gap-3">
@@ -155,10 +155,10 @@
         <i data-lucide="users" class="w-6 h-6 text-[#D4AF37] shrink-0 mt-1"></i>
         <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">限額席次</p><p class="font-bold mt-1">小班制</p><p class="text-sm text-[#9AA3B5]">名額有限，精緻實戰</p></div>
       </div>
-      <div class="glass rounded-2xl p-5 flex gap-4 items-start">
+      <a href="#outcomes" class="glass rounded-2xl p-5 flex gap-4 items-start hover:border-[#D4AF37]/60 transition-colors">
         <i data-lucide="map" class="w-6 h-6 text-[#D4AF37] shrink-0 mt-1"></i>
-        <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">核心產出</p><p class="font-bold mt-1">NLP 內外對齊指南</p><p class="text-sm text-[#9AA3B5]">＋ 90 日行動計畫</p></div>
-      </div>
+        <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">一天之後</p><p class="font-bold mt-1">說得出自己的不同</p><p class="text-sm text-[#D4AF37]">看 4 大核心成果 →</p></div>
+      </a>
       <div class="glass rounded-2xl p-5 flex gap-4 items-start">
         <i data-lucide="map-pin" class="w-6 h-6 text-[#D4AF37] shrink-0 mt-1"></i>
         <div class="min-w-0"><p class="text-xs tracking-[.2em] text-[#9AA3B5]">上課地點</p><p class="font-bold mt-1">台北市區</p><p class="text-sm text-[#9AA3B5]">捷運站附近，報名後通知</p></div>
@@ -171,7 +171,7 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-2xl mx-auto">
         <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">你也可以再想想</h2>
-        <p class="mt-4 text-[#9AA3B5]"><span class="inline-block whitespace-nowrap">把「再想想」換算成數字。</span><span class="inline-block whitespace-nowrap">看看晚一點開始，你會少賺多少。</span></p>
+        <p class="mt-4 text-[#9AA3B5]"><span class="inline-block whitespace-nowrap">把「再想想」換算成數字。</span><span class="inline-block whitespace-nowrap">看看晚一點開始，</span><span class="inline-block whitespace-nowrap">隱藏在帳面下的損失。</span></p>
       </div>
 
       <div class="mt-12 grid lg:grid-cols-2 gap-6 lg:gap-8">
@@ -195,17 +195,18 @@
 
           <div>
             <div class="flex items-center justify-between gap-3 mb-3">
-              <label for="ideal" class="font-medium">理想時薪</label>
-              <div class="flex items-center gap-2 text-sm text-[#9AA3B5]"><input id="idealN" type="number" class="numfield" min="200" max="5000" step="50" aria-label="理想時薪數值">元/hr</div>
+              <label for="ideal" class="font-medium"><span class="inline-block whitespace-nowrap">每週有幾小時，</span><span class="inline-block whitespace-nowrap">花在不會累積成資產的事上？</span></label>
+              <div class="flex items-center gap-2 text-sm text-[#9AA3B5] shrink-0"><input id="idealN" type="number" class="numfield" min="1" max="20" step="1" aria-label="每週小時數">小時</div>
             </div>
-            <input id="ideal" type="range" min="200" max="5000" step="50" value="450">
-            <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>200</span><span>5,000</span></div>
+            <input id="ideal" type="range" min="1" max="20" step="1" value="5">
+            <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>1</span><span>20</span></div>
+            <p class="mt-2 text-xs text-[#6B7385]">例如：重複處理同樣的問題、沒有留下方法的救火、做完就沒有下文的事</p>
             <p id="idealHint" class="mt-2 text-xs text-[#F59E0B]"></p>
           </div>
 
           <div class="rounded-2xl border border-white/10 px-5 py-4 flex items-center justify-between gap-4">
-            <span class="flex items-center gap-2 text-sm"><i data-lucide="trending-up" class="w-4 h-4 text-[#D4AF37]"></i>時薪差距</span>
-            <span class="tabnum font-bold text-xl sm:text-2xl text-[#F59E0B] whitespace-nowrap">NT$ <span id="gap">150</span><span class="text-sm text-[#9AA3B5] font-normal"> /hr</span></span>
+            <span class="flex items-center gap-2 text-sm"><i data-lucide="trending-down" class="w-4 h-4 text-[#D4AF37]"></i>每週流失的時間價值</span>
+            <span class="tabnum font-bold text-xl sm:text-2xl text-[#F59E0B] whitespace-nowrap">NT$ <span id="gap">1,500</span><span class="text-sm text-[#9AA3B5] font-normal"> /週</span></span>
           </div>
 
           <div>
@@ -225,15 +226,15 @@
         <div class="relative rounded-3xl p-6 sm:p-10 overflow-hidden border border-[#F59E0B]/40 bg-gradient-to-br from-[#1A1408] via-[#120F0A] to-[#0B0F19] flex flex-col min-w-0">
           <div class="aura w-80 h-80 bg-[#F59E0B]/20 -top-24 -right-24"></div>
           <div class="relative">
-            <p id="lossLabel" class="text-sm sm:text-base tracking-[.08em] text-[#D4AF37]">晚 1 年開始，你會少賺</p>
+            <p id="lossLabel" class="text-sm sm:text-base tracking-[.08em] text-[#D4AF37]">晚 1 年開始，你沒意識到的損失</p>
             <p id="lossWrap" class="mt-4 font-num font-bold leading-none text-[#F59E0B] pulse whitespace-nowrap overflow-hidden" style="font-size: 4.5rem;">
-              <span class="text-[.45em] align-top mr-1">NT$</span><span id="loss" class="tabnum">300,000</span>
+              <span class="text-[.45em] align-top mr-1">NT$</span><span id="loss" class="tabnum">78,000</span>
             </p>
             <p class="mt-3 text-sm text-[#9AA3B5] tabnum">
-              <span id="formula">公式：時薪差 × 每月約 166.7 工時 × 延後月數</span>
+              <span id="formula">公式：你的時薪 × 每週小時數 × 52 週</span>
             </p>
 
-            <p id="lossNote" class="mt-6 text-[#C9CFDA] leading-[1.9]">這筆錢不會出現在你的存摺上，<br>卻一點一點拉開你和理想生活的距離。</p>
+            <p id="lossNote" class="mt-6 text-[#C9CFDA] leading-[1.9]">這些時間不會出現在你的存摺上，<br>也沒有累積成你的資產。</p>
 
             <a href="#plans" class="btn-gold mt-8 rounded-full px-7 py-4 inline-flex items-center justify-center gap-2 w-full sm:w-auto">
               停止付拖延稅，查看方案 <i data-lucide="arrow-right" class="w-5 h-5"></i>
@@ -249,30 +250,42 @@
     <div class="max-w-6xl mx-auto">
       <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-10 lg:gap-16 items-start">
         <div class="lg:sticky lg:top-28 min-w-0">
-          <p class="eyebrow mb-4">痛點破局</p>
-          <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">為什麼過去的計畫，<br>總會<span class="gold-text">半途中斷</span>？</h2>
-          <p class="mt-5 text-[#9AA3B5] max-w-md">不是你不夠努力。多半是三個結構性的缺口，<span class="inline-block whitespace-nowrap">讓熱情撐不到終點。</span></p>
+          <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">這些時刻，<br>你是不是也遇過？</h2>
+          <p class="mt-5 text-[#9AA3B5] max-w-md">不是你不夠好。<span class="inline-block whitespace-nowrap">是還沒有人陪你，</span><span class="inline-block whitespace-nowrap">把這些年的累積整理清楚。</span></p>
         </div>
         <div class="flex flex-col gap-4 min-w-0">
           <div class="glass rounded-2xl p-6 flex gap-5">
-            <i data-lucide="badge-x" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
-            <div><h3 class="font-bold text-lg">把平台資源誤當成自己的能力</h3><p class="text-[#9AA3B5] mt-1">職位帶來的資源讓事情順利運作，卻忘了主動累積「換個位置也帶得出成果」的真本事。</p></div>
+            <i data-lucide="id-card" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">被問到強項，只說得出職稱和年資</h3><p class="text-[#9AA3B5] mt-1">明明做了很多事，一開口卻只剩公司名字和頭銜。104 履歷診療室也觀察到，求職者最常問的就是「我到底適合什麼？」</p></div>
           </div>
           <div class="glass rounded-2xl p-6 flex gap-5">
-            <i data-lucide="layers" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
-            <div><h3 class="font-bold text-lg">卡在信念層</h3><p class="text-[#9AA3B5] mt-1">上課熱血三天，回到日常就被慣性拉回原點。問題在於缺乏從屬等級的垂直對齊，行動底下沒有信念撐住。</p></div>
+            <i data-lucide="trending-down" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">做得越久，反而越不安</h3><p class="text-[#9AA3B5] mt-1">組織調整、新主管、新工具一來，就開始懷疑自己。人力銀行調查，45 歲以上工作者有 95.1% 自認有職場恐慌。</p></div>
           </div>
           <div class="glass rounded-2xl p-6 flex gap-5">
-            <i data-lucide="flag" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
-            <div><h3 class="font-bold text-lg">缺乏明確檢核點</h3><p class="text-[#9AA3B5] mt-1">沒有具體的觀察訊號，也沒有第 30／60／90 天的檢查機制，進度只能靠感覺。</p></div>
+            <i data-lucide="cpu" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">看著新人用 AI，很快做完你熟悉的工作</h3><p class="text-[#9AA3B5] mt-1">你知道自己會的不只這些，卻說不出差別在哪裡。AI 越能幹，你越需要說清楚，哪些事、哪些判斷只有你可以。</p></div>
+          </div>
+          <div class="glass rounded-2xl p-6 flex gap-5">
+            <i data-lucide="repeat" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
+            <div><h3 class="font-bold text-lg">上了很多課，熱血三天又回到原點</h3><p class="text-[#9AA3B5] mt-1">研究發現，新行為平均要重複約 66 天，才會變成自然而然的習慣；另一項實驗也發現，只靠自己練習不容易達成目標，有教練或團體陪伴的人，拖延明顯減少。改變需要重複，也需要有人在旁邊看著。</p></div>
           </div>
         </div>
       </div>
 
+      <div class="mt-16 max-w-3xl mx-auto rounded-3xl border border-[#F59E0B]/40 bg-gradient-to-br from-[#1A1408] to-[#0B0F19] p-6 sm:p-10">
+        <h3 class="font-serif font-bold text-2xl sm:text-3xl">為什麼是現在？</h3>
+        <ul class="mt-6 flex flex-col gap-4 text-[#C9CFDA] leading-[1.9]">
+          <li class="flex gap-3"><i data-lucide="hourglass" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-1.5"></i><span>上班族自己預估，平均 2.56 年內，工作內容就會被 AI 明顯改變。等到改變發生才整理，選擇已經變少了。</span></li>
+          <li class="flex gap-3"><i data-lucide="sprout" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-1.5"></i><span>資產會複利。越早看清楚自己的定位，接下來的每一份努力，就越早開始累積在對的地方。</span></li>
+          <li class="flex gap-3"><i data-lucide="users" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-1.5"></i><span>小班制，每季只開一梯。錯過這一梯，下一次是三個月後，又損失三個月的時間價值。</span></li>
+        </ul>
+        <p class="mt-6 text-xs text-[#6B7385]">資料來源：1111 人力銀行與臺北市勞動局「2026 上班族 AI 焦慮與職涯準備調查」；人力銀行 2026 年中高齡工作者調查；104 履歷診療室；Lally et al. (2010), European Journal of Social Psychology；Losch et al. (2016), Frontiers in Psychology。</p>
+      </div>
+
       <div class="hair my-20"></div>
 
-      <div class="text-center max-w-2xl mx-auto">
-        <p class="eyebrow mb-4">Workshop Deliverables</p>
+      <div id="outcomes" class="text-center max-w-2xl mx-auto scroll-mt-24">
         <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug"><span class="inline-block whitespace-nowrap">當天你會完成</span> <span class="inline-block whitespace-nowrap">4 大核心成果</span></h2>
       </div>
 
@@ -280,42 +293,28 @@
         <article class="glass rounded-3xl p-7 flex flex-col gap-4">
           <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="compass" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">NLP 內外在對齊指南</h3></div>
           <p class="text-[#9AA3B5]">從屬等級（Logical Levels）六層垂直梳理：環境、行為、能力、信念、身分、使命。找出卡住你的那一層，讓想法、能力與行動朝同一個方向前進。</p>
+          <p class="text-[#F5EEDC] border-t border-[#D4AF37]/20 pt-4"><span class="text-[#D4AF37]">對你的幫助｜</span>管理大師麥可・波特說，策略的本質是選擇不做什麼。內外在對齊，幫你刪除不做的事，把有限的時間花在最能有效累積資產的事情上，執行時也不再內耗。</p>
         </article>
         <article class="glass rounded-3xl p-7 flex flex-col gap-4">
-          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="target" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">S.C.A.N. 90 日行動計畫</h3></div>
+          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="target" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">馬上可開始的 90 日行動計畫與成果發表會</h3></div>
           <p class="text-[#9AA3B5]">鎖定一項資產、一個 90 天成果，訂出明確檢核點，讓熱情退去之後，計畫依然有路可走。</p>
+          <p class="text-[#F5EEDC] border-t border-[#D4AF37]/20 pt-4"><span class="text-[#D4AF37]">對你的幫助｜</span>90 天，剛好走過新習慣平均需要的 66 天。三個月後在發表會上，你看得見具體的進展，而不是又一個沒完成的計畫。</p>
         </article>
         <article class="glass rounded-3xl p-7 flex flex-col gap-4">
-          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="landmark" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">職涯法說會：資產負債表</h3></div>
+          <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="landmark" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">個人的職涯資產負債表</h3></div>
           <p class="text-[#9AA3B5]">算出個人資產淨值分數，並定位三年後的目標位置，像經營一家公司一樣經營自己。</p>
+          <p class="text-[#F5EEDC] border-t border-[#D4AF37]/20 pt-4"><span class="text-[#D4AF37]">對你的幫助｜</span>看清達到目標需要哪些資源，知道放大哪一項，可以走得更省力。</p>
         </article>
         <article class="glass rounded-3xl p-7 flex flex-col gap-4">
           <div class="flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center bg-[#D4AF37]/15 border border-[#D4AF37]/40"><i data-lucide="quote" class="w-5 h-5 text-[#D4AF37]"></i></span><h3 class="font-serif font-bold text-xl">人生價值句 ＆ Be 宣言</h3></div>
-          <p class="text-[#9AA3B5]">以五感定錨提煉核心價值句。不只靠職稱介紹自己，也能自信說出你為團隊創造的價值。</p>
+          <p class="text-[#9AA3B5]">提煉你專屬的核心價值句。不只靠職稱介紹自己，也能自信說出你獨特的價值定位。</p>
+          <p class="text-[#F5EEDC] border-t border-[#D4AF37]/20 pt-4"><span class="text-[#D4AF37]">對你的幫助｜</span>在重要場合，一句話就讓人記住你，吸引對的資源靠近。</p>
         </article>
       </div>
 
-      <!-- Schedule -->
-      <div class="mt-20 glass rounded-3xl p-6 sm:p-10">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
-          <div>
-            <p class="eyebrow mb-3">One-day Agenda</p>
-            <h3 class="font-serif font-bold text-2xl sm:text-3xl">精實一日行程</h3>
-            <p class="mt-2 text-sm text-[#D4AF37] tabnum"><span class="inline-block whitespace-nowrap">1/16(六) ・ 台北市區捷運站附近</span><span class="inline-block whitespace-nowrap">（確切地點於報名後通知）</span></p>
-          </div>
-          <p class="text-sm text-[#9AA3B5] flex items-center gap-2"><i data-lucide="utensils" class="w-4 h-4 text-[#D4AF37]"></i>含精緻午餐、茶水點心與學員交流</p>
-        </div>
-        <ol class="flex flex-col">
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">09:00</span><div><p class="font-bold">開場：職涯法說會啟動</p><p class="text-sm text-[#9AA3B5]">破冰、平台資源 vs. 個人真實價值的自我檢視</p></div></li>
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">09:30</span><div><p class="font-bold">Gauge 盤點：看清已累積的職涯資產</p><p class="text-sm text-[#9AA3B5]">G.A.M.E. 框架，完成個人資產負債表與淨值分數</p></div></li>
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">11:00</span><div><p class="font-bold">NLP 從屬等級：由上而下垂直對齊</p><p class="text-sm text-[#9AA3B5]">六層梳理，找出卡住行動的那一層信念</p></div></li>
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">12:30</span><div><p class="font-bold">精緻午餐與交流</p><p class="text-sm text-[#9AA3B5]">與同班學員建立連結</p></div></li>
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">13:30</span><div><p class="font-bold">人生價值句 ＆ Be 宣言</p><p class="text-sm text-[#9AA3B5]">五感定錨，提煉屬於你的核心價值句</p></div></li>
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">15:00</span><div><p class="font-bold">S.C.A.N. 90 日行動計畫</p><p class="text-sm text-[#9AA3B5]">鎖定一項資產，設定第 30／60／90 天檢核點</p></div></li>
-          <li class="timeline-row py-4 border-b border-white/5"><span class="num text-xl text-[#D4AF37] font-semibold">16:30</span><div><p class="font-bold">實作發表</p><p class="text-sm text-[#9AA3B5]">目標與行動計劃分享</p></div></li>
-          <li class="timeline-row py-4"><span class="num text-xl text-[#D4AF37] font-semibold">17:00</span><div><p class="font-bold">收斂與承諾：明天就開始的第一步</p><p class="text-sm text-[#9AA3B5]">90 天後成果發表會說明</p></div></li>
-        </ol>
-        <p class="mt-4 text-xs text-[#6B7385]">實際時段依當期課程安排微調。</p>
+      <div class="mt-16 text-center text-[#C9CFDA]">
+        <p class="tabnum"><i data-lucide="calendar-days" class="inline w-5 h-5 text-[#D4AF37] -mt-1 mr-1"></i><span class="inline-block whitespace-nowrap">1/16(六) 09:00–17:00</span><span class="mx-2 text-[#6B7385]">・</span><span class="inline-block whitespace-nowrap">台北市區捷運站附近</span></p>
+        <p class="mt-2 text-sm text-[#9AA3B5]"><span class="inline-block whitespace-nowrap">確切地點於報名後通知，</span><span class="inline-block whitespace-nowrap">含午餐與茶點</span></p>
       </div>
     </div>
   </section>
@@ -325,7 +324,7 @@
     <div class="aura w-[460px] h-[460px] bg-[#D4AF37]/10 top-20 -left-40"></div>
     <div class="relative max-w-6xl mx-auto grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-16 items-start">
       <div class="max-w-[400px] w-full mx-auto lg:mx-0">
-        <div class="frame"><img src="ginger-profile.jpg" alt="職涯資產主理人 Ginger 林逸蓁" loading="lazy"></div>
+        <div class="frame"><img src="ginger-profile.jpg" alt="Ginger 林逸蓁" loading="lazy"></div>
         <div class="mt-6 grid grid-cols-3 gap-3 text-center">
           <div class="glass rounded-xl py-3"><p class="num text-3xl font-bold text-[#D4AF37]">20<span class="text-lg">+</span></p><p class="text-[11px] text-[#9AA3B5] tracking-wider">年經營層幕僚</p></div>
           <div class="glass rounded-xl py-3"><p class="num text-3xl font-bold text-[#D4AF37]">NLP</p><p class="text-[11px] text-[#9AA3B5] tracking-wider">專業執行師</p></div>
@@ -334,15 +333,17 @@
       </div>
 
       <div class="min-w-0">
-        <p class="eyebrow mb-4">Your facilitator</p>
+        <p class="text-sm tracking-[.25em] text-[#D4AF37] mb-4">工作坊引導人</p>
         <h2 class="font-serif font-black text-4xl sm:text-5xl tracking-wide">Ginger 林逸蓁</h2>
-        <p class="mt-3 text-lg text-[#D4AF37] tracking-[.2em]">職涯資產主理人 ・《把資歷變資產》作者</p>
+        <p class="mt-3 text-lg text-[#D4AF37] tracking-[.2em]">《把資歷變資產》作者</p>
 
-        <div class="mt-8 flex flex-col gap-5 text-[#C9CFDA] leading-[1.95] max-w-[40em]">
-          <p class="flex gap-3"><i data-lucide="building-2" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>任職於台灣大型集團旗下關係企業，擔任經營層幕僚超過 20 年，歷任<strong class="text-[#F5EEDC]">董事長特助、經營企劃主管及企業內部講師</strong>。</span></p>
-          <p class="flex gap-3"><i data-lucide="eye" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>從企業策略、人才發展到組織變動，近距離參與經營決策現場，深刻理解企業如何評估人才、配置資源與放大價值。</span></p>
-          <p class="flex gap-3"><i data-lucide="handshake" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>曾接受國際企業家導師 Dan Lok 的高價值成交與教練訓練，將企業端的價值判斷，轉化為每個人都能運用的價值溝通方法。</span></p>
-          <p class="flex gap-3"><i data-lucide="brain" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span>深度結合 NLP（神經語言程式學），將思維、行為與價值創造之間的關係，轉化為系統化的落地工具。</span></p>
+        <p class="mt-8 font-serif font-bold text-xl text-[#F5EEDC]">Ginger 帶給你的</p>
+        <div class="mt-5 flex flex-col gap-5 text-[#C9CFDA] leading-[1.95] max-w-[40em]">
+          <p class="flex gap-3"><i data-lucide="building-2" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">我知道組織真正看重什麼</strong>在台灣大型集團旗下企業擔任經營層幕僚超過 20 年，歷任<strong class="text-[#F5EEDC]">董事長特助、經營企劃主管及企業內部講師</strong>。我看過企業怎麼評估一個人、把重要的事交給誰。</span></p>
+          <p class="flex gap-3"><i data-lucide="presentation" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">我陪很多人走過這一段</strong>15 年以上企業內訓經驗，帶過基層到中高階主管；也是 104 人力銀行 Giver 職涯志工，看過太多優秀的人，卡在說不清楚自己。</span></p>
+          <p class="flex gap-3"><i data-lucide="footprints" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">這套方法，我先用在自己身上</strong>在正職之外，我利用假日，走進沒有職稱保護的真實市場，從頭建立信任、被拒絕、再調整，親身驗證什麼樣的經驗帶得到新的地方。</span></p>
+          <p class="flex gap-3"><i data-lucide="handshake" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">讓你的價值被聽懂</strong>曾接受國際企業家導師 Dan Lok 的高價值成交與教練訓練，把價值判斷轉化為每個人都能運用的溝通方法。</span></p>
+          <p class="flex gap-3"><i data-lucide="brain" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">讓改變落地</strong>深度結合 NLP（神經語言程式學），將思維、行為與價值創造之間的關係，轉化為讓你的價值放大的系統化落地工具。</span></p>
         </div>
 
         <div class="hair my-9"></div>
@@ -366,65 +367,101 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-2xl mx-auto">
         <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug">過去課程學員怎麼說</h2>
-        <p class="mt-4 text-[#9AA3B5]"><span class="inline-block whitespace-nowrap">這些是 Ginger「職涯資產認知課程」的學員分享。</span><span class="inline-block whitespace-nowrap">一日工作坊的回饋，會陸續補上。</span></p>
+        <p class="mt-4 text-[#9AA3B5]"><span class="inline-block whitespace-nowrap">這些是 Ginger「職涯資產認知課程」的學員分享。</span></p>
       </div>
       <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="0EcuDlhpc8I" aria-label="播放 Jason 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="0EcuDlhpc8I" aria-label="播放外商學員的分享影片">
               <img src="https://i.ytimg.com/vi/0EcuDlhpc8I/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">Jason</span><span class="block text-xs text-[#9AA3B5] mt-0.5">外商</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">外商</figcaption>
           </figure>
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="-dSXpSFXbhM" aria-label="播放 佳寧 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="-dSXpSFXbhM" aria-label="播放醫療業學員的分享影片">
               <img src="https://i.ytimg.com/vi/-dSXpSFXbhM/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">佳寧</span><span class="block text-xs text-[#9AA3B5] mt-0.5">醫療業</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">醫療業</figcaption>
           </figure>
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="rmDhsEpZLg8" aria-label="播放 碩益 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="rmDhsEpZLg8" aria-label="播放創業籌備學員的分享影片">
               <img src="https://i.ytimg.com/vi/rmDhsEpZLg8/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">碩益</span><span class="block text-xs text-[#9AA3B5] mt-0.5">創業籌備</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">創業籌備</figcaption>
           </figure>
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="7pyArtVvUYE" aria-label="播放 瑩臻 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="7pyArtVvUYE" aria-label="播放金融業學員的分享影片">
               <img src="https://i.ytimg.com/vi/7pyArtVvUYE/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">瑩臻</span><span class="block text-xs text-[#9AA3B5] mt-0.5">金融業</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">金融業</figcaption>
           </figure>
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="SCFwcpIbST8" aria-label="播放 姿慧 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="SCFwcpIbST8" aria-label="播放半導體業學員的分享影片">
               <img src="https://i.ytimg.com/vi/SCFwcpIbST8/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">姿慧</span><span class="block text-xs text-[#9AA3B5] mt-0.5">半導體業</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">半導體業</figcaption>
           </figure>
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="BDMpmdRvN5g" aria-label="播放 Joann.K 的分享影片">
-              <img src="https://i.ytimg.com/vi/BDMpmdRvN5g/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
-              <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
-            </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">Joann.K</span><span class="block text-xs text-[#9AA3B5] mt-0.5">馬來西亞國家認證企業教練</span></figcaption>
-          </figure>
-          <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="HJIODIJPXx4" aria-label="播放 PO 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="HJIODIJPXx4" aria-label="播放電子零組件相關業學員的分享影片">
               <img src="https://i.ytimg.com/vi/HJIODIJPXx4/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">PO</span><span class="block text-xs text-[#9AA3B5] mt-0.5">電子零組件相關業</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">電子零組件相關業</figcaption>
           </figure>
           <figure class="min-w-0">
-            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="twC9rrpAoKw" aria-label="播放 建勳 的分享影片">
+            <button type="button" class="yt glass rounded-2xl overflow-hidden relative block w-full aspect-video" data-id="twC9rrpAoKw" aria-label="播放航太業學員的分享影片">
               <img src="https://i.ytimg.com/vi/twC9rrpAoKw/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80">
               <span class="absolute inset-0 grid place-items-center"><span class="w-12 h-12 rounded-full grid place-items-center bg-[#0B0F19]/70 border border-[#D4AF37]/60"><i data-lucide="play" class="w-5 h-5 text-[#D4AF37]"></i></span></span>
             </button>
-            <figcaption class="mt-3 text-sm leading-snug"><span class="text-[#F5EEDC] font-medium">建勳</span><span class="block text-xs text-[#9AA3B5] mt-0.5">航太業</span></figcaption>
+            <figcaption class="mt-3 text-sm text-[#C9CFDA]">航太業</figcaption>
           </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALUE STACK ============ -->
+  <section id="stack" class="gutter py-20 md:py-28">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center">
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug"><span class="inline-block whitespace-nowrap">你付的是一天，</span><span class="inline-block whitespace-nowrap">帶回去的是接下來 90 天</span></h2>
+      </div>
+      <ul class="mt-10 divide-y divide-[#D4AF37]/20 border-y border-[#D4AF37]/20">
+        <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
+          <h3 class="font-bold text-lg text-[#F5EEDC]">一日小班實戰工作坊</h3>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">NT$ 8,800</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">你不是沒能力，只是從來沒有人陪你把這十幾年攤開來看一次。這一天，你會看見哪些經驗還在增值、哪些正在跌價，以及你和別人真正不一樣的地方。</p>
+        </li>
+        <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
+          <h3 class="font-bold text-lg text-[#F5EEDC]">課後一對一面談 60 分鐘</h3>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">價值 NT$ 3,600</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">工作坊裡想通的事，回到日常常常就散了。課後一對一，針對你的狀況，把你的差異化定位，說成一句別人聽得懂、記得住的話。</p>
+        </li>
+        <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
+          <h3 class="font-bold text-lg text-[#F5EEDC]">90 天成果發表會</h3>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">每一梯都有</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">計畫最常死在剛開始的那幾週，不是因為不想做，而是沒有人在終點等你。90 天後，同一群人再聚一次，每個人上台說：這 90 天，我變成了什麼樣子。知道有這一天，你就會走到這一天。</p>
+        </li>
+        <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
+          <h3 class="font-bold text-lg text-[#F5EEDC]">資產升級共學群 90 天</h3>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">年費 NT$ 1,200</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">一個人改變很難堅持，身邊都是不想改變的人更難。這裡的每個人，都在做同一件事。<span class="block mt-1 text-xs text-[#9AA3B5]">讀者方案專屬，完課後經入群面談加入</span></p>
+        </li>
+        <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
+          <h3 class="font-bold text-lg text-[#F5EEDC]">《把資歷變資產》實體書</h3>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">NT$ 480</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">課後忘了方法，翻開就找得到。<span class="block mt-1 text-xs text-[#9AA3B5]">一般方案現場致贈</span></p>
+        </li>
+      </ul>
+      <div class="mt-10 text-center">
+        <p class="text-[#9AA3B5]">合計價值超過</p>
+        <p class="mt-1 num font-bold text-4xl sm:text-5xl text-[#F5EEDC] tabnum">NT$ 12,700</p>
+        <p class="mt-4 text-lg"><span class="inline-block whitespace-nowrap">一般方案 <strong class="text-[#F59E0B] tabnum">NT$ 8,800</strong></span><span class="mx-3 text-[#6B7385]">／</span><span class="inline-block whitespace-nowrap">讀者方案 <strong class="text-[#F59E0B] tabnum">NT$ 6,800</strong></span></p>
+        <p class="mt-6 text-[#C9CFDA] leading-[1.9] max-w-xl mx-auto"><span class="inline-block whitespace-nowrap">和一年流失的時間價值相比</span><span class="inline-block whitespace-nowrap">（試算約 NT$ 78,000），</span><span class="inline-block whitespace-nowrap">這一天不到它的八分之一。</span><br><span class="inline-block whitespace-nowrap">平均到 90 天計畫，</span><span class="inline-block whitespace-nowrap">一天不到 NT$ 98。</span></p>
+        <a href="#plans" class="btn-gold mt-8 rounded-full px-7 py-4 inline-flex items-center justify-center gap-2">查看報名方案 <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
       </div>
     </div>
   </section>
@@ -479,6 +516,7 @@
               <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>課後一對一面談乙次</li>
               <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>專屬實作講義 ＋ 全套模板</li>
               <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>獨家職涯資產【AI 提詞指令包】</li>
+              <li class="flex gap-3"><i data-lucide="sparkles" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5"></i>90 天後成果發表會</li>
               <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>精緻午餐 ＋ 茶水點心</li>
             </ul>
             <details class="mt-6 rounded-2xl border border-[#D4AF37]/40 bg-[#D4AF37]/[.06] px-4 py-3">
@@ -492,7 +530,7 @@
               </ul>
             </details>
             <div class="mt-8 flex flex-col gap-3">
-              <p class="text-xs text-[#9AA3B5] text-center"><span class="inline-block whitespace-nowrap">新書讀者：憑購書單號＋500 字閱讀心得</span><span class="inline-block whitespace-nowrap">（開課前 7 天補交）</span></p>
+              <p class="text-xs text-[#9AA3B5] text-center"><span class="inline-block whitespace-nowrap">新書讀者：開課當天，帶來你的書</span></p>
               <a href="https://p.ecpay.com.tw/5096DC6" target="_blank" rel="noopener" class="btn-gold rounded-full px-6 py-4 inline-flex items-center justify-center gap-2">我是新書讀者 <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
               <button type="button" id="promoToggle" aria-expanded="false" aria-controls="promoBox" class="btn-ghost rounded-full px-6 py-4 inline-flex items-center justify-center gap-2 font-bold"><i data-lucide="ticket" class="w-5 h-5 text-[#D4AF37]"></i>我有優惠碼</button>
               <div id="promoBox" class="hidden rounded-2xl border border-[#D4AF37]/40 bg-black/30 p-4">
@@ -514,7 +552,7 @@
           <span class="self-start text-xs tracking-[.2em] px-3 py-1 rounded-full border border-[#D4AF37]/40 text-[#D4AF37]">快速入場</span>
           <h3 class="mt-5 font-serif font-bold text-2xl leading-snug">一般實戰方案</h3>
           <div class="mt-5">
-            <p class="text-sm text-[#9AA3B5]">無需撰寫心得，直接預約席次</p>
+            <p class="text-sm text-[#9AA3B5]">直接預約席次，現場贈書</p>
             <p class="mt-1 flex items-end gap-2 flex-wrap"><span class="num font-bold text-6xl text-[#F5EEDC] leading-none tabnum">8,800</span><span class="text-sm text-[#C9CFDA] pb-1">NT$ ／ 一日完整實戰</span></p>
             <p class="mt-3 text-sm text-[#C9CFDA] flex items-center gap-2"><i data-lucide="calendar-days" class="w-4 h-4 text-[#D4AF37]"></i><span class="tabnum"><span class="inline-block whitespace-nowrap">1/16(六) 09:00–17:00 ・</span> <span class="inline-block whitespace-nowrap">台北市區捷運站附近</span></span></p>
           </div>
@@ -523,6 +561,7 @@
               <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>課後一對一面談乙次</li>
             <li class="flex gap-3"><i data-lucide="gift" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>現場額外致贈《把資歷變資產》實體書一本</li>
             <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>專屬講義 ＋ 全套模板 ＋ AI 提詞包</li>
+            <li class="flex gap-3"><i data-lucide="sparkles" class="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5"></i>90 天後成果發表會</li>
             <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5"></i>精緻午餐 ＋ 茶水點心</li>
           </ul>
           <a href="https://p.ecpay.com.tw/6802199" target="_blank" rel="noopener" class="btn-ghost mt-8 rounded-full px-6 py-4 inline-flex items-center justify-center gap-2 font-bold">直接預約席次 <i data-lucide="arrow-right" class="w-5 h-5 text-[#D4AF37]"></i></a>
@@ -542,12 +581,12 @@
       </div>
       <div class="mt-10 flex flex-col gap-3">
         <details class="glass rounded-2xl px-6 py-5">
-          <summary class="flex items-center justify-between gap-4 font-bold">閱讀心得要怎麼補交？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
-          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">以新書讀者身分完成「優惠報名方案」付款後，請於開課前 7 天，將《把資歷變資產》購書單號（親簽版、博客來、誠品、MOMO 或實體書店發票皆可）連同 500 字閱讀心得，寄至課程小組信箱 <a href="mailto:urcareer101@gmail.com" class="text-[#D4AF37] underline underline-offset-4 break-all">urcareer101@gmail.com</a>。心得可分享書中最有感的一個觀念，以及你打算如何運用在自己的職涯上。</p>
+          <summary class="flex items-center justify-between gap-4 font-bold">讀者優惠要準備什麼？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">以新書讀者身分完成「優惠報名方案」付款後，請於開課當天，帶來你的《把資歷變資產》。</p>
         </details>
         <details class="glass rounded-2xl px-6 py-5">
           <summary class="flex items-center justify-between gap-4 font-bold">優惠碼要去哪裡取得？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
-          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">優惠碼由 Ginger 的合作夥伴（例如合作節目、社群或講座主辦單位）提供，部分優惠碼設有使用期限。在「優惠報名方案」點選「我有優惠碼」並輸入即可，不需撰寫心得。讀者優惠與優惠碼擇一使用，不可併用。</p>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">優惠碼由 Ginger 的合作夥伴（例如合作節目、社群或講座主辦單位）提供，部分優惠碼設有使用期限。在「優惠報名方案」點選「我有優惠碼」並輸入即可。讀者優惠與優惠碼擇一使用，不可併用。</p>
         </details>
         <details class="glass rounded-2xl px-6 py-5">
           <summary class="flex items-center justify-between gap-4 font-bold">「資產升級共學群」是什麼？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
@@ -572,11 +611,11 @@
         </details>
         <details class="glass rounded-2xl px-6 py-5">
           <summary class="flex items-center justify-between gap-4 font-bold">還沒讀過書，可以直接上課嗎？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
-          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">可以。「一般實戰方案」無需撰寫心得，現場還會致贈實體書一本，課後可搭配書籍複習。</p>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">可以。「一般實戰方案」現場還會致贈實體書一本，課後可搭配書籍複習。</p>
         </details>
         <details class="glass rounded-2xl px-6 py-5">
           <summary class="flex items-center justify-between gap-4 font-bold">計算機的數字代表什麼？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
-          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">計算機以一年 250 個工作天、每天 8 小時（約 2,000 工時）計算：先以「年薪 ÷ 2,000」換算你目前的時薪，再以「時薪差 × 每月工時 × 延後的月數」估算晚開始的機會成本。不論早開始或晚開始，達到理想時薪都需要一段時間，因此延後幾個月，就等於少賺那幾個月的時薪差，用來幫助你把猶豫具體化。實際收入變化因人而異，數字僅供自我評估參考。</p>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">計算機以一年 250 個工作天、每天 8 小時（約 2,000 工時）計算：先以「年薪 ÷ 2,000」換算你一小時的時間價值，再乘上你每週花在「不會累積成資產的事」上的時數，以及一年 52 週，估算這些時間一年的價值；延後幾個月開始，就再依月數換算。目的不是談薪水高低，而是讓你看見，時間花在哪裡，會決定它有沒有累積成你的資產。數字僅供自我評估參考。</p>
         </details>
       </div>
     </div>
@@ -689,18 +728,13 @@
       var annual = unit === 'month' ? v * 12 : v;
       var cur = annual / HOURS_YEAR;
 
-      if (!idealTouched) {
-        var auto = Math.round(cur * 1.5 / 50) * 50;
-        auto = Math.min(+idealR.max, Math.max(+idealR.min, auto));
-        idealR.value = auto; idealN.value = auto; paint(idealR);
-      }
-      var ideal = +idealR.value;
-      var gap = Math.max(0, ideal - cur);
-      var loss = gap * HOURS_MONTH * months;
+      var hrs = +idealR.value;
+      var gap = cur * hrs;
+      var perYear = gap * 52;
+      var loss = perYear / 12 * months;
 
       document.getElementById('curHr').textContent = fmt(cur);
       document.getElementById('gap').textContent = fmt(gap);
-      document.getElementById('idealHint').textContent = (cur > 0 && ideal <= cur) ? '理想時薪要高於目前時薪，才算得出落差喔。' : '';
       lossEl.textContent = fmt(loss);
 
       var label = document.getElementById('lossLabel');
@@ -709,11 +743,11 @@
       if (months === 0) {
         label.textContent = '現在開始，你不必付出這筆代價';
         note.innerHTML = segN('最划算的開始時間，') + segN('永遠是現在。');
-        formula.innerHTML = seg('每多等 1 年，') + seg('就少賺 NT$ ' + fmt(gap * HOURS_YEAR));
+        formula.innerHTML = seg('每多等 1 年，') + seg('就流失 NT$ ' + fmt(perYear) + ' 的時間價值');
       } else {
-        label.textContent = never ? '如果 3 年都沒開始，你會少賺' : (months === 6 ? '晚半年開始，你會少賺' : '晚 ' + span(months) + '開始，你會少賺');
-        note.innerHTML = segN('這筆錢不會出現在你的存摺上，') + '<br>' + segN('卻一點一點拉開') + segN('你和理想生活的距離。');
-        formula.innerHTML = seg('公式：時薪差 ' + fmt(gap)) + seg('× 每月約 166.7 工時') + seg('＝ 每月少賺 NT$ ' + fmt(gap * HOURS_MONTH) + '，') + seg('再 × ' + months + ' 個月');
+        label.textContent = never ? '如果 3 年都沒開始，你沒意識到的損失' : (months === 6 ? '晚半年開始，你沒意識到的損失' : '晚 ' + span(months) + '開始，你沒意識到的損失');
+        note.innerHTML = segN('這些時間不會出現在你的存摺上，') + '<br>' + segN('也沒有累積成你的資產。');
+        formula.innerHTML = seg('公式：時薪 ' + fmt(cur)) + seg('× 每週 ' + hrs + ' 小時') + seg('× 52 週 ＝ 每年 NT$ ' + fmt(perYear) + '，') + seg('再 × ' + (months / 12).toFixed(months % 12 ? 1 : 0) + ' 年');
       }
 
       fitLoss();
@@ -724,7 +758,7 @@
     }
 
     idealN.value = idealR.value; paint(idealR);
-    idealR.addEventListener('input', function () { idealTouched = true; idealN.value = idealR.value; paint(idealR); calc(); });
+    idealR.addEventListener('input', function () { idealN.value = idealR.value; paint(idealR); calc(); });
     idealN.addEventListener('input', function () {
       var v = parseFloat(idealN.value);
       if (isNaN(v)) return;
