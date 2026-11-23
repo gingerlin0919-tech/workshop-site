@@ -117,14 +117,25 @@
     <div class="aura w-[520px] h-[520px] bg-[#F59E0B]/15 -top-40 -right-40"></div>
     <div class="aura w-[420px] h-[420px] bg-[#D4AF37]/10 top-60 -left-40"></div>
 
-    <div class="relative max-w-6xl mx-auto grid lg:grid-cols-[1.25fr_.75fr] gap-12 lg:gap-16 items-center">
-      <div class="min-w-0">
-        <p class="eyebrow mb-6 leading-relaxed"><span class="inline-block whitespace-nowrap">《把資歷變資產》作者親授</span><span class="hidden sm:inline"> ・ </span><br class="sm:hidden"><span class="inline-block whitespace-nowrap">1/16(六) 一日實戰</span></p>
+    <div class="relative max-w-6xl mx-auto grid lg:grid-cols-[1.25fr_.75fr] gap-x-16 gap-y-8 lg:gap-y-0 items-start">
+      <div class="min-w-0 lg:col-start-1 lg:row-start-1">
         <h1 class="font-serif font-black text-[1.55rem] min-[400px]:text-[1.75rem] leading-[1.4] sm:text-5xl sm:leading-[1.3] lg:text-[3.4rem] tracking-wide">
           <span class="block text-[15px] sm:text-lg font-normal text-[#9AA3B5] tracking-normal leading-relaxed mb-3"><span class="inline-block whitespace-nowrap">104 履歷診療室觀察：</span><span class="inline-block whitespace-nowrap">求職者最常問的，不是履歷怎麼寫</span></span><span class="inline-block whitespace-nowrap">而是<span class="gold-text">「我到底適合什麼？」</span></span>
         </h1>
-        <p class="mt-7 text-[17px] sm:text-lg text-[#C9CFDA] max-w-[38em] leading-[1.9]">
-          被問到「你的強項是什麼」，你能一句話說清楚嗎？用一天，找出你的<strong class="text-[#F5EEDC]">差異化定位</strong>，具象化你的價值，帶著 <strong class="text-[#F5EEDC]">30／60／90 天行動計畫</strong>回去。
+        <p class="mt-7 text-[17px] sm:text-lg text-[#C9CFDA] max-w-[38em] leading-[1.9]"><span class="inline-block whitespace-nowrap">被問到「你的強項是什麼」，</span><span class="inline-block whitespace-nowrap">你能一句話說清楚嗎？</span></p>
+        <p class="eyebrow mt-6 leading-relaxed"><span class="inline-block whitespace-nowrap">《把資歷變資產》作者親授</span><span class="hidden sm:inline"> ・ </span><br class="sm:hidden"><span class="inline-block whitespace-nowrap">1/16(六) 一日實戰</span></p>
+      </div>
+
+      <!-- Hero book cover -->
+      <div class="relative max-w-[240px] sm:max-w-[340px] lg:max-w-[400px] w-full mx-auto lg:mx-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:-mt-6">
+        <div class="book">
+          <img src="book-cover.png" width="616" height="900" alt="《把資歷變資產》新書封面" loading="eager">
+        </div>
+      </div>
+
+      <div class="min-w-0 lg:col-start-1 lg:row-start-2 lg:mt-5">
+        <p class="text-[17px] sm:text-lg text-[#C9CFDA] max-w-[38em] leading-[1.9]">
+          用一天，找出你的<strong class="text-[#F5EEDC]">差異化定位</strong>，具象化你的價值，帶著 <strong class="text-[#F5EEDC]">30／60／90 天行動計畫</strong>回去。
         </p>
 
         <div class="mt-9 flex flex-col sm:flex-row gap-3">
@@ -134,13 +145,6 @@
           <a href="#calculator" class="btn-ghost rounded-full px-7 py-4 text-center inline-flex items-center justify-center gap-2">
             <i data-lucide="calculator" class="w-5 h-5 text-[#D4AF37]"></i>我需要再想想
           </a>
-        </div>
-      </div>
-
-      <!-- Hero book cover -->
-      <div class="relative max-w-[340px] sm:max-w-[420px] lg:max-w-[440px] w-full mx-auto lg:mx-0">
-        <div class="book">
-          <img src="book-cover.png" width="616" height="900" alt="《把資歷變資產》新書封面" loading="eager">
         </div>
       </div>
     </div>
@@ -195,12 +199,12 @@
 
           <div>
             <div class="flex items-center justify-between gap-3 mb-3">
-              <label for="ideal" class="font-medium"><span class="inline-block whitespace-nowrap">每週有幾小時，</span><span class="inline-block whitespace-nowrap">花在不會累積成資產的事上？</span></label>
+              <label for="ideal" class="font-medium"><span class="inline-block whitespace-nowrap">每週有幾小時，</span><span class="inline-block whitespace-nowrap">花在做完就歸零的事上？</span></label>
               <div class="flex items-center gap-2 text-sm text-[#9AA3B5] shrink-0"><input id="idealN" type="number" class="numfield" min="1" max="20" step="1" aria-label="每週小時數">小時</div>
             </div>
             <input id="ideal" type="range" min="1" max="20" step="1" value="5">
             <div class="flex justify-between text-xs text-[#6B7385] mt-2 tabnum"><span>1</span><span>20</span></div>
-            <p class="mt-2 text-xs text-[#6B7385]">例如：重複處理同樣的問題、沒有留下方法的救火、做完就沒有下文的事</p>
+            <div class="mt-3 text-xs text-[#9AA3B5] leading-[1.9]"><p>一件事做完之後，問問自己有沒有留下：</p><p>・<strong class="text-[#C9CFDA]">方法</strong>：下次可以做得更快，或能教給別人</p><p>・<strong class="text-[#C9CFDA]">證據</strong>：說得出來的成果或案例</p><p>・<strong class="text-[#C9CFDA]">信任</strong>：有人因此更願意找你</p><p class="mt-1">三樣都沒有，這段時間就沒有累積成你的資產。這些事不一定不重要，很多是非做不可的；差別在於，你有沒有從中留下點什麼。</p></div>
             <p id="idealHint" class="mt-2 text-xs text-[#F59E0B]"></p>
           </div>
 
@@ -256,7 +260,7 @@
         <div class="flex flex-col gap-4 min-w-0">
           <div class="glass rounded-2xl p-6 flex gap-5">
             <i data-lucide="id-card" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
-            <div><h3 class="font-bold text-lg">被問到強項，只說得出職稱和年資</h3><p class="text-[#9AA3B5] mt-1">明明做了很多事，一開口卻只剩公司名字和頭銜。104 履歷診療室也觀察到，求職者最常問的就是「我到底適合什麼？」</p></div>
+            <div><h3 class="font-bold text-lg">當被問到「你在做什麼？」</h3><p class="text-[#9AA3B5] mt-1">只說得出職稱和年資。明明做了很多事，一開口卻只剩公司名字和頭銜。104 履歷診療室也觀察到，求職者最常問的就是「我到底適合什麼？」</p></div>
           </div>
           <div class="glass rounded-2xl p-6 flex gap-5">
             <i data-lucide="trending-down" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
@@ -264,11 +268,11 @@
           </div>
           <div class="glass rounded-2xl p-6 flex gap-5">
             <i data-lucide="cpu" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
-            <div><h3 class="font-bold text-lg">看著新人用 AI，很快做完你熟悉的工作</h3><p class="text-[#9AA3B5] mt-1">你知道自己會的不只這些，卻說不出差別在哪裡。AI 越能幹，你越需要說清楚，哪些事、哪些判斷只有你可以。</p></div>
+            <div><h3 class="font-bold text-lg">看著新一代用 AI 完成你熟悉的工作</h3><p class="text-[#9AA3B5] mt-1">你知道自己會的不只這些，卻說不出差別在哪裡。AI 越能幹，你越需要說清楚，哪些事、哪些判斷只有你可以。</p></div>
           </div>
           <div class="glass rounded-2xl p-6 flex gap-5">
             <i data-lucide="repeat" class="w-7 h-7 text-[#D4AF37] shrink-0"></i>
-            <div><h3 class="font-bold text-lg">上了很多課，熱血三天又回到原點</h3><p class="text-[#9AA3B5] mt-1">研究發現，新行為平均要重複約 66 天，才會變成自然而然的習慣；另一項實驗也發現，只靠自己練習不容易達成目標，有教練或團體陪伴的人，拖延明顯減少。改變需要重複，也需要有人在旁邊看著。</p></div>
+            <div><h3 class="font-bold text-lg">上了很多課，改變卻無感</h3><p class="text-[#9AA3B5] mt-1">研究發現，新行為平均要重複約 66 天，才會變成自然而然的習慣；另一項實驗也發現，只靠自己練習不容易達成目標，有教練或團體陪伴的人，拖延明顯減少。改變需要重複，也需要有人在旁邊看著。</p></div>
           </div>
         </div>
       </div>
@@ -322,6 +326,11 @@
   <!-- ============ COACH ============ -->
   <section id="coach" class="relative gutter py-20 md:py-28 bg-gradient-to-b from-[#0B0F19] via-[#0F1422] to-[#0B0F19] border-y border-white/5">
     <div class="aura w-[460px] h-[460px] bg-[#D4AF37]/10 top-20 -left-40"></div>
+    <div class="relative max-w-6xl mx-auto text-center lg:text-left mb-10">
+      <p class="text-sm tracking-[.25em] text-[#D4AF37] mb-4">工作坊引導人</p>
+      <h2 class="font-serif font-black text-4xl sm:text-5xl tracking-wide">Ginger 林逸蓁</h2>
+      <p class="mt-3 text-lg text-[#D4AF37] tracking-[.2em]">《把資歷變資產》作者</p>
+    </div>
     <div class="relative max-w-6xl mx-auto grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-16 items-start">
       <div class="max-w-[400px] w-full mx-auto lg:mx-0">
         <div class="frame"><img src="ginger-profile.jpg" alt="Ginger 林逸蓁" loading="lazy"></div>
@@ -333,11 +342,7 @@
       </div>
 
       <div class="min-w-0">
-        <p class="text-sm tracking-[.25em] text-[#D4AF37] mb-4">工作坊引導人</p>
-        <h2 class="font-serif font-black text-4xl sm:text-5xl tracking-wide">Ginger 林逸蓁</h2>
-        <p class="mt-3 text-lg text-[#D4AF37] tracking-[.2em]">《把資歷變資產》作者</p>
-
-        <p class="mt-8 font-serif font-bold text-xl text-[#F5EEDC]">Ginger 帶給你的</p>
+        <p class="font-serif font-bold text-xl text-[#F5EEDC]">Ginger 帶給你的</p>
         <div class="mt-5 flex flex-col gap-5 text-[#C9CFDA] leading-[1.95] max-w-[40em]">
           <p class="flex gap-3"><i data-lucide="building-2" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">我知道組織真正看重什麼</strong>在台灣大型集團旗下企業擔任經營層幕僚超過 20 年，歷任<strong class="text-[#F5EEDC]">董事長特助、經營企劃主管及企業內部講師</strong>。我看過企業怎麼評估一個人、把重要的事交給誰。</span></p>
           <p class="flex gap-3"><i data-lucide="presentation" class="w-5 h-5 text-[#D4AF37] shrink-0 mt-1.5"></i><span><strong class="block text-[#F5EEDC]">我陪很多人走過這一段</strong>15 年以上企業內訓經驗，帶過基層到中高階主管；也是 104 人力銀行 Giver 職涯志工，看過太多優秀的人，卡在說不清楚自己。</span></p>
@@ -428,27 +433,28 @@
     <div class="max-w-3xl mx-auto">
       <div class="text-center">
         <h2 class="font-serif font-bold text-3xl sm:text-4xl leading-snug"><span class="inline-block whitespace-nowrap">你付的是一天，</span><span class="inline-block whitespace-nowrap">帶回去的是接下來 90 天</span></h2>
+        <p class="mt-4 text-[#9AA3B5]">報名工作坊，就包含以下內容：</p>
       </div>
       <ul class="mt-10 divide-y divide-[#D4AF37]/20 border-y border-[#D4AF37]/20">
         <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
           <h3 class="font-bold text-lg text-[#F5EEDC]">一日小班實戰工作坊</h3>
-          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">NT$ 8,800</p>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">價值 NT$ 8,800</p>
           <p class="text-[#C9CFDA] leading-[1.9]">你不是沒能力，只是從來沒有人陪你把這十幾年攤開來看一次。這一天，你會看見哪些經驗還在增值、哪些正在跌價，以及你和別人真正不一樣的地方。</p>
         </li>
         <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
-          <h3 class="font-bold text-lg text-[#F5EEDC]">課後一對一面談 60 分鐘</h3>
-          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">價值 NT$ 3,600</p>
-          <p class="text-[#C9CFDA] leading-[1.9]">工作坊裡想通的事，回到日常常常就散了。課後一對一，針對你的狀況，把你的差異化定位，說成一句別人聽得懂、記得住的話。</p>
+          <h3 class="font-bold text-lg text-[#F5EEDC]">課後一對一面談 45 分鐘</h3>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">價值 NT$ 2,700</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">工作坊無法顧及所有人的產出，Ginger 特別另外空出時間，針對你的狀況，協助你再次梳理。</p>
         </li>
         <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
           <h3 class="font-bold text-lg text-[#F5EEDC]">90 天成果發表會</h3>
-          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">每一梯都有</p>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] sm:max-w-[9em]">讓你更有達成目標的行動力</p>
           <p class="text-[#C9CFDA] leading-[1.9]">計畫最常死在剛開始的那幾週，不是因為不想做，而是沒有人在終點等你。90 天後，同一群人再聚一次，每個人上台說：這 90 天，我變成了什麼樣子。知道有這一天，你就會走到這一天。</p>
         </li>
         <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
           <h3 class="font-bold text-lg text-[#F5EEDC]">資產升級共學群 90 天</h3>
-          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">年費 NT$ 1,200</p>
-          <p class="text-[#C9CFDA] leading-[1.9]">一個人改變很難堅持，身邊都是不想改變的人更難。這裡的每個人，都在做同一件事。<span class="block mt-1 text-xs text-[#9AA3B5]">讀者方案專屬，完課後經入群面談加入</span></p>
+          <p class="sm:row-span-2 sm:text-right text-[#D4AF37] tabnum whitespace-nowrap">價值 NT$ 1,200／年</p>
+          <p class="text-[#C9CFDA] leading-[1.9]">一個人改變很難堅持，身邊都是不想改變的人更難。這裡的每個人，都在做同一件事。90 天內免費體驗社團內所有的預錄課程，也可以隨時在社群發問。<span class="block mt-1 text-xs text-[#9AA3B5]">讀者方案專屬，完課後經入群面談加入</span></p>
         </li>
         <li class="py-6 grid sm:grid-cols-[1fr_auto] gap-x-8 gap-y-2">
           <h3 class="font-bold text-lg text-[#F5EEDC]">《把資歷變資產》實體書</h3>
@@ -457,10 +463,11 @@
         </li>
       </ul>
       <div class="mt-10 text-center">
-        <p class="text-[#9AA3B5]">合計價值超過</p>
+        <p class="text-[#9AA3B5]">合計總價值</p>
         <p class="mt-1 num font-bold text-4xl sm:text-5xl text-[#F5EEDC] tabnum">NT$ 12,700</p>
+        <p class="mt-2 text-xs text-[#6B7385] tabnum">讀者方案含共學群；一般方案含實體書，總價值 NT$ 11,980</p>
         <p class="mt-4 text-lg"><span class="inline-block whitespace-nowrap">一般方案 <strong class="text-[#F59E0B] tabnum">NT$ 8,800</strong></span><span class="mx-3 text-[#6B7385]">／</span><span class="inline-block whitespace-nowrap">讀者方案 <strong class="text-[#F59E0B] tabnum">NT$ 6,800</strong></span></p>
-        <p class="mt-6 text-[#C9CFDA] leading-[1.9] max-w-xl mx-auto"><span class="inline-block whitespace-nowrap">和一年流失的時間價值相比</span><span class="inline-block whitespace-nowrap">（試算約 NT$ 78,000），</span><span class="inline-block whitespace-nowrap">這一天不到它的八分之一。</span><br><span class="inline-block whitespace-nowrap">平均到 90 天計畫，</span><span class="inline-block whitespace-nowrap">一天不到 NT$ 98。</span></p>
+        <p class="mt-6 text-[#C9CFDA] leading-[1.9] max-w-xl mx-auto"><span class="inline-block whitespace-nowrap">和一年流失的時間價值相比</span><span class="inline-block whitespace-nowrap">（試算約 NT$ 78,000），</span><span class="inline-block whitespace-nowrap">這一天不到它的八分之一。</span><br><span class="inline-block whitespace-nowrap">90 天陪跑計畫，</span><span class="inline-block whitespace-nowrap">平均每日不到 NT$ 98。</span></p>
         <a href="#plans" class="btn-gold mt-8 rounded-full px-7 py-4 inline-flex items-center justify-center gap-2">查看報名方案 <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
       </div>
     </div>
@@ -615,7 +622,7 @@
         </details>
         <details class="glass rounded-2xl px-6 py-5">
           <summary class="flex items-center justify-between gap-4 font-bold">計算機的數字代表什麼？<i data-lucide="chevron-down" class="chev w-5 h-5 text-[#D4AF37] shrink-0"></i></summary>
-          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">計算機以一年 250 個工作天、每天 8 小時（約 2,000 工時）計算：先以「年薪 ÷ 2,000」換算你一小時的時間價值，再乘上你每週花在「不會累積成資產的事」上的時數，以及一年 52 週，估算這些時間一年的價值；延後幾個月開始，就再依月數換算。目的不是談薪水高低，而是讓你看見，時間花在哪裡，會決定它有沒有累積成你的資產。數字僅供自我評估參考。</p>
+          <p class="mt-4 text-[#9AA3B5] leading-[1.9]">計算機以一年 250 個工作天、每天 8 小時（約 2,000 工時）計算：先以「年薪 ÷ 2,000」換算你一小時的時間價值，再乘上你每週花在「做完就歸零的事」上的時數，以及一年 52 週，估算這些時間一年的價值；延後幾個月開始，就再依月數換算。目的不是談薪水高低，而是讓你看見，時間花在哪裡，會決定它有沒有累積成你的資產。數字僅供自我評估參考。</p>
         </details>
       </div>
     </div>
